@@ -1,0 +1,7 @@
+stages:
+  - build
+  - deploy
+
+include:
+  - local: '/.gitlab/legacy.yml'
+  # - local: '/.gitlab/k8s.yml'

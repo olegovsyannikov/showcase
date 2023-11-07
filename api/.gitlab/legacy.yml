@@ -1,0 +1,136 @@
+.tpl_deploy:
+  stage: deploy
+  image: alpine
+  before_script:
+    - which ssh-agent || apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $DEPLOY_HOST >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+.tpl_build:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - echo '' > .env
+
+build-graphql:
+  extends: .tpl_build
+  only:
+    - tags
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/graphql.Dockerfile
+      --destination="$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG-graphql"
+      --destination="$CI_REGISTRY_IMAGE:latest-graphql"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --cache=true
+  tags:
+    - docker
+
+build-graphql-dev:
+  extends: build-graphql
+  only:
+    refs:
+      - develop
+  variables:
+    CI_COMMIT_TAG: develop
+
+build-zmq:
+  extends: .tpl_build
+  only:
+    - tags
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/zmq.Dockerfile
+      --destination="$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG-zmq"
+      --destination="$CI_REGISTRY_IMAGE:latest-zmq"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --cache=true
+  tags:
+    - docker
+
+build-zmq-dev:
+  extends: build-zmq
+  only:
+    refs:
+      - develop
+  variables:
+    CI_COMMIT_TAG: develop
+
+build-qworker:
+  extends: .tpl_build
+  only:
+    - tags
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/qworker.Dockerfile
+      --destination="$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG-qworker"
+      --destination="$CI_REGISTRY_IMAGE:latest-qworker"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --cache=true
+  tags:
+    - docker
+
+build-qworker-dev:
+  extends: build-qworker
+  only:
+    refs:
+      - develop
+  variables:
+    CI_COMMIT_TAG: develop
+
+build-scheduler:
+  extends: .tpl_build
+  only:
+    - tags
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/scheduler.Dockerfile
+      --destination="$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG-scheduler"
+      --destination="$CI_REGISTRY_IMAGE:latest-scheduler"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --cache=true
+  tags:
+    - docker
+
+build-scheduler-dev:
+  extends: build-scheduler
+  only:
+    refs:
+      - develop
+  variables:
+    CI_COMMIT_TAG: develop
+
+deploy-dev:
+  extends: .tpl_deploy
+  when: manual
+  variables:
+    DEPLOY_HOST: '92.53.66.40'
+    DEPLOY_USER: deploy
+  script:
+    - >
+      ssh $DEPLOY_USER@$DEPLOY_HOST -C "
+      docker service update --force --with-registry-auth --image $CI_REGISTRY_IMAGE:develop-graphql soberone_api-graphql &&
+      docker service update --force --with-registry-auth --image $CI_REGISTRY_IMAGE:develop-zmq soberone_api-zmq &&
+      docker service update --force --with-registry-auth --image $CI_REGISTRY_IMAGE:develop-qworker soberone_api-qworker &&
+      docker service update --force --with-registry-auth --image $CI_REGISTRY_IMAGE:develop-scheduler soberone_api-scheduler
+      "

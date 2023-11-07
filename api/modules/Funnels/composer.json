@@ -1,0 +1,25 @@
+{
+    "name": "soberone/funnels",
+    "description": "",
+    "authors": [
+        {
+            "name": "Victor Zhuk",
+            "email": "zhuk@pm.me"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Funnels\\Providers\\FunnelsServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Funnels\\": ""
+        }
+    }
+}

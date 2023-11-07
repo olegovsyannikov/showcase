@@ -1,0 +1,27 @@
+grumphp:
+  stop_on_failure: false
+  ignore_unstaged_changes: true
+  git_hook_variables:
+    EXEC_GRUMPHP_COMMAND: 'docker run --rm -v $(pwd):/app -w /app registry.gitlab.com/privilege/api:develop-graphql'
+
+  environment:
+    files:
+      - .env
+
+  ascii:
+    failed: ~
+    succeeded: ~
+
+  parallel:
+    enabled: true
+    max_workers: 32
+
+  fixer:
+    enabled: true
+
+  tasks:
+    psalm:
+      config: psalm.xml
+      no_cache: true
+    phpcsfixer:
+      config: .php-cs-fixer.php

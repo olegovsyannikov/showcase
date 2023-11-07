@@ -1,0 +1,205 @@
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+scalar DateTimeTz @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTimeTz")
+scalar Email @scalar(class: "MLL\\GraphQLScalars\\Email")
+scalar JSON @scalar(class: "MLL\\GraphQLScalars\\JSON")
+scalar Mixed @scalar(class: "MLL\\GraphQLScalars\\Mixed")
+
+enum UserStatus {
+    ACTIVE @enum(value: 1)
+    LEFT @enum(value: 2)
+    FREE @enum(value: 3)
+    PRO_BONO @enum(value: 4)
+}
+
+type Query {
+    me: User @auth
+
+    funnels: [Funnel!]! @all
+    funnel(id: ID!): Funnel @find
+
+    tasks: [Task!]! @all
+
+    users(
+        where: _ @whereConditions(columns: ["id", "email", "name"])
+    ): [User!]! @paginate
+    user(id: ID! @eq): User @find
+    # createUser(name: String!): User! @create
+    updateUser(id: ID!, name: String): User @update
+    # deleteUser(id: ID!): User @delete
+}
+
+type Mutation {
+    createTrigger(input: CreateTriggerInput! @spread): Trigger @create
+    updateTrigger(input: UpdateTriggerInput! @spread): Trigger @update
+    deleteTrigger(id: ID!): Trigger @delete(relation: "stages")
+
+    updateTriggerPosition(id: ID!, position: Int!): Trigger @update
+}
+
+input CreateTriggerInput {
+    condition: JSON!
+    actions: JSON!
+    stages: FunnelStagesBelongsToMany!
+}
+
+input UpdateTriggerInput {
+    id: ID!
+    condition: JSON!
+    actions: JSON!
+}
+
+input FunnelStagesBelongsToMany {
+    connect: [ID!]
+    sync: [ID!]
+    # create: [CreateAuthorInput!]
+    # update: [UpdateAuthorInput!]
+    # upsert: [UpsertAuthorInput!]
+    # syncWithoutDetaching: [ID!]
+    # delete: [ID!]
+    # disconnect: [ID!]
+}
+
+
+###############################################################################
+
+interface Entity {
+    id: ID!
+}
+
+type User implements Entity {
+    id: ID!
+    is_email_confirmed: Boolean!
+    notify_new_tasks: Boolean!
+    notify_diary: Boolean!
+    tariff_plan: Int!
+    is_chat_available: Boolean!
+    is_deleted: Boolean!
+    created_at: DateTime!
+    birthdate: DateTime
+    email: String
+    name: String
+    userpic: String
+    city: String
+    about: String
+    timezone: String
+    name_color: String
+    phone: String
+    status: UserStatus
+    is_payed: Boolean
+
+    payments: [Payment!]!
+
+    stages: [FunnelStage!]! @belongsToMany
+    invoices: [Invoice!]! @BelongsToMany
+    tasks: [UserTask!]! @hasMany
+}
+
+type Invoice implements Entity {
+    id: ID!
+    created_at: DateTime
+    updated_at: DateTime
+
+    payments: [Payment!]! @hasMany
+}
+
+type Payment implements Entity {
+    id: ID!
+    amount: Float
+    transaction_code: String
+    transaction_data: JSON
+    payment_provider: String
+    payed_at: DateTime
+    is_recurring: Boolean
+    expires_at: DateTime
+    is_success: Boolean!
+    retries: Int!
+    created_at: DateTime!
+    cloudpayments_transcation_id: Int
+
+    tariff: Tariff! @belongsTo
+    user: [User!]! @belongsTo
+    invoice: [Invoice!]! @belongsTo
+}
+
+type Tariff implements Entity {
+    id: ID!
+    name: String!
+    description: String
+    month_amount:Float!
+    min_months:Int!
+    is_active:Boolean!
+    plan:Int!
+}
+
+type Funnel implements Entity {
+    id: ID!
+    title: String!
+    description: String
+    created_at: DateTimeTz!
+    updated_at: DateTimeTz
+
+    stages: [FunnelStage!]! @hasMany
+    triggers: [Trigger!]! @belongsToMany
+}
+
+type FunnelStage implements Entity {
+    id: ID!
+    title: String!
+    position: Int!
+    description: String
+
+    pivot: FunnelStagePivot
+
+    funnel: Funnel! @belongsTo
+    triggers: [Trigger!]! @belongsToMany
+    users: [User!]! @belongsToMany
+}
+
+type FunnelStagePivot {
+    is_active: Boolean
+    completed_at: DateTime
+}
+
+type Trigger implements Entity {
+    id: ID!
+    condition: JSON!
+    actions: JSON!
+    position: Int!
+
+    stages: [FunnelStage!]! @belongsToMany
+    funnels: [Funnel!]! @belongsToMany
+}
+
+type Task implements Entity {
+    id: ID!
+    title: String!
+    is_active: Boolean!
+}
+
+type UserTask implements Entity {
+    id: ID!
+    show_my_answers: Boolean!
+    created_at: DateTime!
+    seen_at: DateTime
+    postponed_until: DateTime
+    notified_at: DateTime
+
+    task: Task!
+    user: User!
+    taskResult: TaskResult
+    stage: FunnelStage
+    trigger: Trigger
+}
+
+type TaskResult implements Entity {
+    id: ID!
+    created_at: DateTime!
+    updated_at: DateTime
+    is_finished: Boolean!
+    result: String
+    finished_at: DateTime
+
+    task: Task!
+    user: User!
+}

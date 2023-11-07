@@ -1,0 +1,13 @@
+{
+    "name": "Funnels",
+    "alias": "funnels",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Funnels\\Providers\\FunnelsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
