@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+    ingress.kubernetes.io/ssl-redirect: "true"
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+  name: admin-old
+  namespace: soberone
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: admin-old.getsober.one
+    http:
+      paths:
+      - backend:
+          service:
+            name: admin-old
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - admin-old.getsober.one
+    secretName: admin-old-tls

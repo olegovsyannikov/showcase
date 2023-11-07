@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/instance: beanstalkd
+    app.kubernetes.io/name: beanstalkd
+  name: beanstalkd
+  namespace: soberone
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: beanstalkd
+      app.kubernetes.io/name: beanstalkd
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/instance: beanstalkd
+        app.kubernetes.io/name: beanstalkd
+    spec:
+      containers:
+      - image: schickling/beanstalkd
+        imagePullPolicy: IfNotPresent
+        name: beanstalkd
+        ports:
+        - containerPort: 11300
+          name: beanstalkd-tcp
+          protocol: TCP
+        # resources:
+        #   limits:
+        #     cpu: 250m
+        #     ephemeral-storage: 1Gi
+        #     memory: 512Mi
+        #   requests:
+        #     cpu: 250m
+        #     ephemeral-storage: 1Gi
+        #     memory: 512Mi
+        securityContext:
+          capabilities:
+            drop:
+            - NET_RAW
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
+      serviceAccount: default
+      serviceAccountName: default
+      terminationGracePeriodSeconds: 30
+      tolerations:
+      - effect: NoSchedule
+        key: kubernetes.io/arch
+        operator: Equal
+        value: amd64

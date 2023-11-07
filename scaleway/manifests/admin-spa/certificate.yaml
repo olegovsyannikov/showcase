@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: admin-spa
+  namespace: soberone
+spec:
+  commonName: admin-spa.getsober.one
+  dnsNames:
+  - admin-spa.getsober.one
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
+  secretName: admin-spa-tls

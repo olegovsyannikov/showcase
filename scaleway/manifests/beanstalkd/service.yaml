@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: beanstalkd
+    app.kubernetes.io/name: beanstalkd
+  name: beanstalkd
+  namespace: soberone
+spec:
+  # clusterIP: 10.125.129.255
+  # clusterIPs:
+  # - 10.125.129.255
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: beanstalkd-tcp
+    port: 11300
+    protocol: TCP
+    targetPort: 11300
+  selector:
+    app.kubernetes.io/instance: beanstalkd
+    app.kubernetes.io/name: beanstalkd
+  sessionAffinity: None
+  type: ClusterIP

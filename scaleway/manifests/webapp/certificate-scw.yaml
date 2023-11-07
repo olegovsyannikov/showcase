@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: app2-getsober-one
+  namespace: soberone
+spec:
+  commonName: app-scw.getsober.one
+  dnsNames:
+  - app-scw.getsober.one
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
+  secretName: app-scw-getsober-one-tls

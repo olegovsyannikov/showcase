@@ -1,0 +1,28 @@
+{{- if .Values.ingressroute.enabled -}}
+{{- $fullName := include "..fullname" . -}}
+{{- $svcPort := .Values.service.port -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ $fullName }}
+  labels:
+    {{- include "..labels" . | nindent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  entryPoints:
+    - web
+    - websecure
+  routes:
+    {{- range .Values.ingressroute.hosts }}
+    - match: Host(`{{ .host }}`) && PathPrefix(`{{ .path }}`)
+      kind: Rule
+      services:
+        - name: {{ $fullName }}
+          port: {{ $svcPort }}
+    {{- end }}
+  tls:
+    certResolver: le
+{{- end -}}

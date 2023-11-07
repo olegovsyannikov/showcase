@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-old
+  namespace: soberone
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: admin-old
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: admin-old
+    spec:
+      containers:
+      - image: registry.gitlab.com/privilege/admin2:latest
+        imagePullPolicy: Always
+        name: admin-old
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: legacy-env
+        env:
+          - name: DB_CONNECTION
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: connection
+          - name: DB_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: host
+          - name: DB_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: port
+          - name: DB_USERNAME
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: username
+          - name: DB_PASSWORD
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: password
+          - name: DB_DATABASE
+            valueFrom:
+              configMapKeyRef:
+                name: sql-db-creds
+                key: dbname
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      imagePullSecrets:
+      - name: gitlab-registry-creds

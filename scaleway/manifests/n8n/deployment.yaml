@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: n8n
+  namespace: n8n
+spec:
+  selector:
+    matchLabels:
+      app: n8n
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: n8n
+    spec:
+      containers:
+      - image: n8nio/n8n:0.123.1
+        imagePullPolicy: Always
+        name: n8n
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: n8n-env
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /root/.n8n
+          name: n8n-volume
+      volumes:
+      - name: n8n-volume
+        persistentVolumeClaim:
+          claimName: n8n-pvc

@@ -1,0 +1,91 @@
+# Default values for api.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: registry.gitlab.com/privilege/api
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: latest-graphql
+
+imagePullSecrets:
+- name: gitlab-registry-creds
+
+nameOverride: ''
+fullnameOverride: ''
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ''
+
+podAnnotations: {}
+
+podSecurityContext:
+  {}
+  # fsGroup: 2000
+
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  # className: ''
+  className: traefik
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    # cert-manager.io/issue-temporary-certificate: 'true'
+    # acme.cert-manager.io/http01-edit-in-place: 'true'
+    # kubernetes.io/ingress.allow-http: 'false'
+  hosts:
+    - host: api-scw.getsober.one
+      paths:
+        - pathType: Prefix
+          path: /api/v2
+        - pathType: Prefix
+          path: /graphql
+  tls:
+    - secretName: api-scw-getsober-one-tls
+      hosts:
+        - api-scw.getsober.one
+
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  limits:
+    cpu: 100m
+    memory: 2Gi
+  requests:
+    cpu: 100m
+    memory: 1.5Gi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
