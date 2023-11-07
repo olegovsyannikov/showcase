@@ -1,0 +1,25 @@
+{{- if .Values.configmap.create -}}
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "..fullname" . }}-dotenv
+data:
+  .env: |-
+  {{ .Files.Get "configmap/dotenv" | nindent 4 }}
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "..fullname" . }}-nginx
+data:
+  .env: |-
+  {{ .Files.Get "configmap/default.conf" | nindent 4 }}
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "..fullname" . }}-fpm
+data:
+  .env: |-
+  {{ .Files.Get "configmap/www.conf" | nindent 4 }}
+{{- end -}}
