@@ -1,0 +1,1317 @@
+[
+  {
+    "id": "question-1",
+    "type": "single-choice",
+    "question": "Quit smoking in\u00a030\u00a0days",
+    "description": "Pass the quiz and get your custom tailored\u00a0plan in 5 min",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-1-1",
+        "text": "18-24",
+        "icon": "",
+        "feedback": ""
+      },
+      {
+        "id": "option-1-2",
+        "text": "25-34",
+        "icon": "",
+        "feedback": ""
+      },
+      {
+        "id": "option-1-3",
+        "text": "35-44",
+        "icon": "",
+        "feedback": ""
+      },
+      {
+        "id": "option-1-4",
+        "text": "45+",
+        "icon": "",
+        "feedback": ""
+      }
+    ]
+  },
+  {
+    "id": "question-2",
+    "type": "single-choice",
+    "question": "What is your gender?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-2-1",
+        "text": "Male",
+        "icon": "",
+        "feedback": ""
+      },
+      {
+        "id": "option-2-2",
+        "text": "Female",
+        "icon": "",
+        "feedback": ""
+      },
+      {
+        "id": "option-2-3",
+        "text": "Other",
+        "icon": "",
+        "feedback": ""
+      }
+    ]
+  },
+  {
+    "id": "question-3",
+    "type": "single-choice",
+    "question": "What usually nudges you to light up a cigarette?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-3-1",
+        "text": "Stress or anxiety",
+        "icon": "",
+        "feedback": "Stress can be a powerful trigger. Recognizing it is the first step. Your personalized cessation journey will have tools to help you manage stress differently."
+      },
+      {
+        "id": "option-3-2",
+        "text": "When I'm with friends who smoke",
+        "icon": "",
+        "feedback": "Social settings can influence our habits. As you progress, we'll explore ways to navigate these situations without feeling the urge."
+      },
+      {
+        "id": "option-3-3",
+        "text": "It's just a routine, like after meals",
+        "icon": "",
+        "feedback": "Habits can be reshaped! With the right approach, you can replace this routine with healthier alternatives."
+      },
+      {
+        "id": "option-3-4",
+        "text": "I crave the nicotine",
+        "icon": "",
+        "feedback": "Nicotine cravings can be tough, but understanding them is crucial. Your crafted plan will offer strategies to combat these cravings."
+      },
+      {
+        "id": "option-3-5",
+        "text": "It's a mix of reasons",
+        "icon": "",
+        "feedback": "It's okay to have multiple reasons. As we delve deeper, we'll address each one to ensure your journey is tailored to your needs."
+      }
+    ]
+  },
+  {
+    "id": "question-4",
+    "type": "single-choice",
+    "question": "Do you often find yourself smoking more in social situations or when you're alone?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-4-1",
+        "text": "Mostly in social situations",
+        "icon": "",
+        "feedback": "Social situations can be a significant trigger. As we move forward, we'll explore ways to enjoy social moments without the need for a cigarette."
+      },
+      {
+        "id": "option-4-2",
+        "text": "Mostly when I'm alone",
+        "icon": "",
+        "feedback": "Alone time can be a moment of reflection or relaxation. We'll work on finding alternative ways to enjoy these moments without smoking."
+      },
+      {
+        "id": "option-4-3",
+        "text": "Regardless of the situation",
+        "icon": "",
+        "feedback": "Consistency in habits means we can craft a plan that addresses your needs uniformly. Let's work on strategies that fit both scenarios."
+      },
+      {
+        "id": "option-4-4",
+        "text": "I don't really notice",
+        "icon": "",
+        "feedback": "That's okay! As we progress, you might start noticing patterns. Awareness is a powerful tool in any journey."
+      },
+      {
+        "id": "option-4-5",
+        "text": "It varies",
+        "icon": "",
+        "feedback": "Moods and days can influence habits. Your personalized cessation journey will help you navigate these varying triggers."
+      }
+    ]
+  },
+  {
+    "id": "question-5",
+    "type": "single-choice",
+    "question": "How often do you reach for a cigarette out of habit, like after a meal or with your morning coffee?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-5-1",
+        "text": "Almost always",
+        "icon": "",
+        "feedback": "Habits can be deeply ingrained, but with awareness and a tailored approach, we can reshape them for a healthier lifestyle."
+      },
+      {
+        "id": "option-5-2",
+        "text": "Sometimes, but not consistently",
+        "icon": "",
+        "feedback": "Intermittent habits can be tricky, but they also offer flexibility. Together, we'll find ways to break these occasional patterns."
+      },
+      {
+        "id": "option-5-3",
+        "text": "Rarely, it's more random for me",
+        "icon": "",
+        "feedback": "Random cravings can be challenging, but understanding them can be key. Your journey will help you identify and manage these unpredictable moments."
+      },
+      {
+        "id": "option-5-4",
+        "text": "I've never noticed patterns",
+        "icon": "",
+        "feedback": "That's alright! As you continue, you might start to see patterns or triggers. Recognizing them is a step towards change."
+      },
+      {
+        "id": "option-5-5",
+        "text": "I have specific routines",
+        "icon": "",
+        "feedback": "Recognizing these routines is a great start. Your personalized plan will offer strategies to transform these specific moments."
+      }
+    ]
+  },
+  {
+    "id": "question-6",
+    "type": "multiple-choice",
+    "question": "We all have our reasons. Which of these stressors make you crave a smoke? (Select all that apply)",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-6-1",
+        "text": "Work-related stress.",
+        "icon": ""
+      },
+      {
+        "id": "option-6-2",
+        "text": "Personal or relationship issues.",
+        "icon": ""
+      },
+      {
+        "id": "option-6-3",
+        "text": "Financial worries.",
+        "icon": ""
+      },
+      {
+        "id": "option-6-4",
+        "text": "General anxiety or overwhelming feelings.",
+        "icon": ""
+      },
+      {
+        "id": "option-6-5",
+        "text": "Health concerns or issues.",
+        "icon": ""
+      },
+      {
+        "id": "option-6-6",
+        "text": "I don't really associate stress with my smoking habits.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "It's insightful to recognize specific triggers. As we delve deeper, we'll explore strategies tailored to these stressors, helping you navigate them without cigarettes."
+      },
+      {
+        "range": [3, 5],
+        "text": "It seems like multiple factors contribute to your smoking habits. Don't worry; your personalized cessation journey will provide tools and strategies to address each of these stressors in healthier ways."
+      },
+      {
+        "range": [6, 6],
+        "text": "That's an important realization! Whether it's specific stressors or other reasons, understanding the 'why' behind our habits is crucial. We'll continue to explore this with you."
+      }
+    ]
+  },
+  {
+    "id": "question-7",
+    "type": "single-choice",
+    "question": "Did you know that some folks smoke because they feel it's a part of their culture or upbringing? Does that resonate with you?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-7-1",
+        "text": "Yes, it's a significant part of my culture or family traditions.",
+        "icon": "",
+        "feedback": "Cultural and familial influences can be powerful. Recognizing this is a step forward. As you progress, your personalized cessation journey will help you find ways to honor your heritage while making healthier choices."
+      },
+      {
+        "id": "option-7-2",
+        "text": "Somewhat, I've seen it around in my community, but it's not a major factor for me.",
+        "icon": "",
+        "feedback": "It's interesting how subtle influences from our surroundings can shape our habits. As we move forward, we'll explore how to navigate these influences while crafting your personal quit plan."
+      },
+      {
+        "id": "option-7-3",
+        "text": "No, my smoking habits aren't really influenced by cultural or familial reasons.",
+        "icon": "",
+        "feedback": "Everyone has their unique reasons and influences. Understanding what doesn't drive your habit is just as important. Let's continue to uncover more about your smoking journey."
+      }
+    ]
+  },
+  {
+    "id": "question-8",
+    "type": "single-choice",
+    "question": "How does smoking fit into your daily routine or work life?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-8-1",
+        "text": "It's a regular part of my breaks at work or school.",
+        "icon": "",
+        "feedback": "Work or school breaks can be a common trigger. Identifying this can help in crafting a plan that introduces healthier break-time activities."
+      },
+      {
+        "id": "option-8-2",
+        "text": "I mostly smoke during my personal downtime or leisure.",
+        "icon": "",
+        "feedback": "Personal downtime is precious. As we move forward, we'll explore ways to make this time even more rewarding without the need for a smoke."
+      },
+      {
+        "id": "option-8-3",
+        "text": "It's intertwined with many parts of my day, both work and personal time.",
+        "icon": "",
+        "feedback": "When smoking is a part of various daily activities, it can be challenging but not impossible to change. Your journey will involve finding new routines and habits to replace the old ones."
+      },
+      {
+        "id": "option-8-4",
+        "text": "I don't really have a set routine; it's more sporadic.",
+        "icon": "",
+        "feedback": "Sporadic habits can sometimes be the result of specific triggers or emotions. Let's delve deeper to understand and address these moments."
+      }
+    ]
+  },
+  {
+    "id": "question-9",
+    "type": "single-choice",
+    "question": "What's the main thing that tempts you to smoke? Is it certain situations, emotions, or just a routine?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-9-1",
+        "text": "Specific situations or events.",
+        "icon": "",
+        "feedback": "Situational triggers can be powerful, but recognizing them is the first step towards overcoming them. Remember, every situation can be faced without a cigarette, and with time, it'll become your new norm."
+      },
+      {
+        "id": "option-9-2",
+        "text": "Certain emotions or feelings.",
+        "icon": "",
+        "feedback": "Emotions can be complex, but they're also a part of what makes us human. Embracing and understanding these feelings can pave the way for a smoke-free life. You've got the strength to navigate emotions without relying on smoking."
+      },
+      {
+        "id": "option-9-3",
+        "text": "It's mostly out of routine or habit.",
+        "icon": "",
+        "feedback": "Habits are learned behaviors, and just as they're formed, they can be unlearned. With determination and the right strategies, you can reshape your daily routine to be healthier and more fulfilling."
+      },
+      {
+        "id": "option-9-4",
+        "text": "A mix of situations, emotions, and routine.",
+        "icon": "",
+        "feedback": "Life throws a mix of situations and emotions our way. By recognizing these triggers and being proactive, you're setting yourself up for success. Every step you take is a step closer to a healthier you."
+      }
+    ]
+  },
+  {
+    "id": "question-10",
+    "type": "single-choice",
+    "question": "Do you ever find yourself comparing your smoking habits to others?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-10-1",
+        "text": "Often – I always notice how much others smoke.",
+        "icon": "",
+        "feedback": "It's natural to compare, but remember, everyone's journey with smoking is unique. Focus on what feels right for you, and trust that you're capable of crafting your own path towards a smoke-free life."
+      },
+      {
+        "id": "option-10-2",
+        "text": "Sometimes – It crosses my mind occasionally.",
+        "icon": "",
+        "feedback": "Occasional comparisons can offer insights, but it's essential to prioritize your feelings and experiences. Your journey is personal, and you have the power to shape it in a way that suits you best."
+      },
+      {
+        "id": "option-10-3",
+        "text": "Rarely – I mostly focus on my own habits.",
+        "icon": "",
+        "feedback": "Focusing on your own habits is a great approach. By understanding and addressing your triggers and patterns, you're setting a strong foundation for a successful quitting journey."
+      },
+      {
+        "id": "option-10-4",
+        "text": "Never – I don't compare at all.",
+        "icon": "",
+        "feedback": "Everyone's path is different, and it's commendable that you're concentrating on your own journey. Stay true to yourself, and remember that every step you take is a testament to your strength and determination."
+      }
+    ]
+  },
+  {
+    "id": "question-11",
+    "type": "single-choice",
+    "question": "The tobacco industry has its ways. Have you ever felt influenced or pressured by their tactics?",
+    "progressLabel": "Part 1 of 3: Smoking habits",
+    "options": [
+      {
+        "id": "option-11-1",
+        "text": "Absolutely – Their advertising and promotions definitely influenced me.",
+        "icon": "",
+        "feedback": "It's understandable. The tobacco industry invests heavily in advertising to attract individuals. Recognizing this influence is a significant step towards reclaiming your choices and shaping your own journey."
+      },
+      {
+        "id": "option-11-2",
+        "text": "Somewhat – I've noticed their tactics, but I wouldn't say they were the main reason I started or continued smoking.",
+        "icon": "",
+        "feedback": "While the industry's tactics might have played a role, it's essential to remember that multiple factors contribute to one's smoking habits. By understanding these, you can better navigate your path to quitting."
+      },
+      {
+        "id": "option-11-3",
+        "text": "Not really – I was aware of their strategies, but they didn't impact my decision to smoke.",
+        "icon": "",
+        "feedback": "Being aware yet unaffected by their strategies shows resilience. Continue to trust your instincts and knowledge as you move forward on your cessation journey."
+      },
+      {
+        "id": "option-11-4",
+        "text": "Never – My smoking habits have nothing to do with the tobacco industry's tactics.",
+        "icon": "",
+        "feedback": "It's empowering to know that your choices are independent of external influences. Harness this confidence as you work towards your smoke-free goals."
+      }
+    ]
+  },
+  {
+    "id": "question-12",
+    "type": "single-choice",
+    "question": "On average, how many cigarettes do you smoke in a day?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-12-1",
+        "text": "I don't smoke every day, just occasionally.",
+        "icon": "",
+        "feedback": "Occasional smoking still has health and financial implications. Even if it's not daily, those cigarettes can add up over time, both in terms of health and money."
+      },
+      {
+        "id": "option-12-2",
+        "text": "1-5 cigarettes.",
+        "icon": "",
+        "feedback": "Smoking 1-5 cigarettes daily means you're consuming approximately 1,825 to 9,125 cigarettes a year. Financially, this could translate to spending between $475 and $2,375 annually on cigarettes alone."
+      },
+      {
+        "id": "option-12-3",
+        "text": "6-10 cigarettes.",
+        "icon": "",
+        "feedback": "At 6-10 cigarettes daily, you're looking at 2,190 to 3,650 cigarettes a year. This habit can cost you between $2,850 and $4,750 annually."
+      },
+      {
+        "id": "option-12-4",
+        "text": "11-20 cigarettes (about a pack).",
+        "icon": "",
+        "feedback": "Smoking about a pack a day translates to around 7,300 cigarettes a year. This habit can set you back about $6,500 every year."
+      },
+      {
+        "id": "option-12-5",
+        "text": "More than 20 cigarettes.",
+        "icon": "",
+        "feedback": "Smoking more than a pack a day can have severe financial consequences. If you're spending more than $6.50 daily on cigarettes, your annual expenditure can easily exceed $7,300. Think of all the other things that money could be used for!"
+      }
+    ]
+  },
+  {
+    "id": "question-13",
+    "type": "single-choice",
+    "question": "Have you ever tried to quit before? If so, how many times?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-13-1",
+        "text": "Never tried.",
+        "icon": "",
+        "feedback": "Everyone's journey is unique. When you're ready, a personalized cessation journey can guide you through the process."
+      },
+      {
+        "id": "option-13-2",
+        "text": "Once.",
+        "icon": "",
+        "feedback": "It's commendable that you took that step! Every attempt, no matter the outcome, is a learning experience. Your crafted plan will consider this as we move forward."
+      },
+      {
+        "id": "option-13-3",
+        "text": "A couple of times.",
+        "icon": "",
+        "feedback": "Multiple attempts show your determination. With each try, you gain more insights about what works for you and what doesn't. Let's use that knowledge to craft a more effective approach."
+      },
+      {
+        "id": "option-13-4",
+        "text": "More than three times.",
+        "icon": "",
+        "feedback": "Your persistence is admirable. Remember, every smoker's journey is different, and it's never too late to find the right approach for you. Your personal quit plan will be tailored to your experiences."
+      },
+      {
+        "id": "option-13-5",
+        "text": "I've lost count.",
+        "icon": "",
+        "feedback": "It's okay to feel frustrated, but don't lose hope. Each attempt has given you valuable insights. Together, we'll use those lessons to shape a plan that aligns with your unique journey."
+      }
+    ]
+  },
+  {
+    "id": "question-14",
+    "type": "multiple-choice",
+    "question": "What methods or strategies did you try during your previous attempts to quit?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-14-1",
+        "text": "Cold turkey.",
+        "icon": ""
+      },
+      {
+        "id": "option-14-2",
+        "text": "Reducing the number of cigarettes gradually.",
+        "icon": ""
+      },
+      {
+        "id": "option-14-3",
+        "text": "Using nicotine replacement therapies (like patches or gum).",
+        "icon": ""
+      },
+      {
+        "id": "option-14-4",
+        "text": "Seeking support from friends or family.",
+        "icon": ""
+      },
+      {
+        "id": "option-14-5",
+        "text": "Joining a support group or therapy.",
+        "icon": ""
+      },
+      {
+        "id": "option-14-6",
+        "text": "Using mobile apps or online resources.",
+        "icon": ""
+      },
+      {
+        "id": "option-14-7",
+        "text": "Trying alternative therapies (e.g., acupuncture, hypnosis).",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "It's great that you've explored some methods. Every strategy offers a unique perspective. As we craft your plan, we'll consider these experiences to find the best approach for you."
+      },
+      {
+        "range": [3, 5],
+        "text": "You've tried a diverse range of strategies, which shows your commitment to quitting. Your past experiences will be invaluable in shaping a personalized cessation journey."
+      },
+      {
+        "range": [6, 7],
+        "text": "Your extensive exploration into quitting methods is commendable. With all this knowledge, we can craft a plan that aligns closely with what you've learned about yourself."
+      }
+    ]
+  },
+  {
+    "id": "question-15",
+    "type": "single-choice",
+    "question": "How long did you manage to stay smoke-free during your longest break from cigarettes?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-15-1",
+        "text": "Less than a week.",
+        "icon": "",
+        "feedback": "Every attempt, no matter how short, is a step towards a smoke-free life. Your journey is unique, and we'll help tailor a plan that suits you."
+      },
+      {
+        "id": "option-15-2",
+        "text": "A week to a month.",
+        "icon": "",
+        "feedback": "A week is a significant achievement! With the right plan, you can extend this even further."
+      },
+      {
+        "id": "option-15-3",
+        "text": "1-3 months.",
+        "icon": "",
+        "feedback": "1-3 months is impressive! You've shown resilience. Let's build on this momentum."
+      },
+      {
+        "id": "option-15-4",
+        "text": "3-6 months.",
+        "icon": "",
+        "feedback": "Staying smoke-free for several months is commendable. You have the strength; let's find the best strategy to keep going."
+      },
+      {
+        "id": "option-15-5",
+        "text": "6 months to a year.",
+        "icon": "",
+        "feedback": "Almost a year without smoking is a huge milestone. With a crafted plan, you can make this a lifelong change."
+      },
+      {
+        "id": "option-15-6",
+        "text": "More than a year.",
+        "icon": "",
+        "feedback": "Over a year smoke-free is incredible! Your dedication is evident. Let's ensure you have the tools to maintain this."
+      }
+    ]
+  },
+  {
+    "id": "question-16",
+    "type": "multiple-choice",
+    "question": "It's okay if things didn't go as planned. Do you remember what triggered you to start smoking again?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-16-1",
+        "text": "A stressful event or situation.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-2",
+        "text": "Social pressure or being around smokers.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-3",
+        "text": "A personal loss or emotional upheaval.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-4",
+        "text": "Out of habit, in certain situations.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-5",
+        "text": "I felt I was missing out.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-6",
+        "text": "Just a random craving.",
+        "icon": ""
+      },
+      {
+        "id": "option-16-7",
+        "text": "I wasn't really committed to quitting.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "Recognizing triggers is a crucial step. With awareness, you can craft strategies to navigate these challenges in your personalized cessation journey."
+      },
+      {
+        "range": [3, 4],
+        "text": "Emotional and habitual triggers can be tough. Remember, every setback is an opportunity to learn and adapt. Your tailored plan will consider these aspects."
+      },
+      {
+        "range": [5, 7],
+        "text": "It's okay to have mixed feelings about quitting. Understanding your motivations and challenges will help in creating a more effective plan for you."
+      }
+    ]
+  },
+  {
+    "id": "question-17",
+    "type": "multiple-choice",
+    "question": "We all have our moments. Are there any barriers or fears holding you back from quitting?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-17-1",
+        "text": "Fear of weight gain.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-2",
+        "text": "Concerns about mood changes or depression.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-3",
+        "text": "I don't have enough support.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-4",
+        "text": "Fear of failure.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-5",
+        "text": "Concern about losing friends or social connections.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-6",
+        "text": "I'm not sure if I can handle the cravings.",
+        "icon": ""
+      },
+      {
+        "id": "option-17-7",
+        "text": "I've tried before and it didn't work.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "It's natural to have these concerns. By understanding them, we can address them in your personalized cessation journey, ensuring you're well-prepared."
+      },
+      {
+        "range": [3, 4],
+        "text": "Believing in yourself is half the battle. Remember, every attempt brings you closer to your goal. Your tailored plan will focus on building confidence and resilience."
+      },
+      {
+        "range": [5, 7],
+        "text": "Social and past experiences can shape our perceptions. Let's use these insights to craft a plan that respects your feelings and experiences, guiding you towards success."
+      }
+    ]
+  },
+  {
+    "id": "question-18",
+    "type": "single-choice",
+    "question": "It's natural to have concerns. Are you worried about potential weight gain or mood changes if you quit?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-18-1",
+        "text": "Yes, I'm worried about gaining weight.",
+        "icon": "",
+        "feedback": "Gaining a bit of weight is common, but the health benefits of quitting far outweigh it. We'll include strategies in your plan to manage this."
+      },
+      {
+        "id": "option-18-2",
+        "text": "I'm concerned about mood swings or depression.",
+        "icon": "",
+        "feedback": "Mood changes can be a part of the quitting process. Your personalized cessation journey will provide tips to navigate these feelings."
+      },
+      {
+        "id": "option-18-3",
+        "text": "Both weight gain and mood changes concern me.",
+        "icon": "",
+        "feedback": "It's okay to have these concerns. Your tailored plan will address both, ensuring you have the tools to manage them."
+      },
+      {
+        "id": "option-18-4",
+        "text": "Not really, these aren't my primary concerns.",
+        "icon": "",
+        "feedback": "Everyone's journey is unique. Let's focus on what matters most to you in your personalized cessation plan."
+      }
+    ]
+  },
+  {
+    "id": "question-19",
+    "type": "single-choice",
+    "question": "Friends make everything better! Do you feel like your social circle influences your smoking habits?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-19-1",
+        "text": "Yes, many of my friends smoke, and it's a social activity for us.",
+        "icon": "",
+        "feedback": "Social settings can be challenging, especially when habits are shared. Your personal quit plan will offer strategies to navigate these situations."
+      },
+      {
+        "id": "option-19-2",
+        "text": "Some of my friends smoke, but I don't think it influences me much.",
+        "icon": "",
+        "feedback": "It's great that you feel independent in your choices. Let's focus on your personal reasons and motivations in your cessation journey."
+      },
+      {
+        "id": "option-19-3",
+        "text": "None of my friends smoke, but I still do.",
+        "icon": "",
+        "feedback": "Your journey is unique, and it's all about you. Your tailored plan will be crafted to suit your individual needs and circumstances."
+      },
+      {
+        "id": "option-19-4",
+        "text": "I've felt peer pressure in the past, but not anymore.",
+        "icon": "",
+        "feedback": "Overcoming peer pressure is commendable. Let's continue to build on that strength in your personalized cessation journey."
+      }
+    ]
+  },
+  {
+    "id": "question-20",
+    "type": "single-choice",
+    "question": "Deep down, do you ever feel that you're capable of achieving more professionally?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-20-1",
+        "text": "Absolutely, I often feel I could do more.",
+        "icon": "",
+        "feedback": "Believing in your potential is the first step. As you embark on your cessation journey, you might find newfound energy and focus to chase those professional dreams."
+      },
+      {
+        "id": "option-20-2",
+        "text": "Sometimes, but I'm content with where I am.",
+        "icon": "",
+        "feedback": "Contentment is a beautiful state of mind. Remember, every step you take towards quitting can add more quality to your life, both personally and professionally."
+      },
+      {
+        "id": "option-20-3",
+        "text": "Not really, I'm quite satisfied with my achievements.",
+        "icon": "",
+        "feedback": "Celebrating your achievements is essential. Embracing a smoke-free life could be another feather in your cap, enhancing your well-being."
+      },
+      {
+        "id": "option-20-4",
+        "text": "I haven't given it much thought.",
+        "icon": "",
+        "feedback": "It's okay to be in the moment. As you progress, reflecting on various aspects of life can offer clarity. Your personalized cessation journey might bring some insights."
+      }
+    ]
+  },
+  {
+    "id": "question-21",
+    "type": "single-choice",
+    "question": "Money talks! How confident are you about your current financial situation?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-21-1",
+        "text": "Very confident – I'm in a good place financially.",
+        "icon": "",
+        "feedback": "That's great to hear! Remember, quitting smoking can add to those savings, giving you even more financial freedom."
+      },
+      {
+        "id": "option-21-2",
+        "text": "Somewhat confident – I manage, but there's room for improvement.",
+        "icon": "",
+        "feedback": "Every step towards a smoke-free life can contribute to better financial health. Imagine the savings from not buying cigarettes!"
+      },
+      {
+        "id": "option-21-3",
+        "text": "Not very confident – I often find myself struggling.",
+        "icon": "",
+        "feedback": "We understand. Taking control of your smoking habits can be a step towards easing some financial burdens. The savings from not smoking can add up over time."
+      },
+      {
+        "id": "option-21-4",
+        "text": "I prefer not to think about it.",
+        "icon": "",
+        "feedback": "It's okay to take things one step at a time. As you explore your cessation journey, you might find the financial benefits of quitting to be a pleasant surprise."
+      }
+    ]
+  },
+  {
+    "id": "question-22",
+    "type": "single-choice",
+    "question": "We all have our moments of self-doubt. Do you ever worry that you're not good enough?",
+    "progressLabel": "Part 2 of 3: Past experience",
+    "options": [
+      {
+        "id": "option-22-1",
+        "text": "Often – it's a recurring feeling for me.",
+        "icon": "",
+        "feedback": "Remember, everyone has their unique journey and pace. Embracing self-compassion can be a powerful tool on your cessation journey. You're worthy of every step you take towards a healthier life."
+      },
+      {
+        "id": "option-22-2",
+        "text": "Sometimes – it comes and goes.",
+        "icon": "",
+        "feedback": "It's natural to have those feelings occasionally. Celebrate your strengths and remember that every effort towards quitting is a testament to your resilience."
+      },
+      {
+        "id": "option-22-3",
+        "text": "Rarely – I'm generally confident in myself.",
+        "icon": "",
+        "feedback": "That's a strong foundation to build upon! Your confidence can be a driving force in your personalized cessation journey. Keep believing in yourself."
+      },
+      {
+        "id": "option-22-4",
+        "text": "Never – I always believe in myself.",
+        "icon": "",
+        "feedback": "Your unwavering belief in yourself is commendable! Harness that confidence as you navigate the path to becoming smoke-free."
+      }
+    ]
+  },
+  {
+    "id": "question-23",
+    "type": "multiple-choice",
+    "question": "On the flip side, what are some of the benefits you think you'd enjoy if you quit smoking?",
+    "progressLabel": "Part 3 of 3: Bright future",
+    "options": [
+      {
+        "id": "option-23-1",
+        "text": "Improved health and reduced risk of diseases.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-2",
+        "text": "Saving money that I used to spend on cigarettes.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-3",
+        "text": "A better sense of taste and smell.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-4",
+        "text": "Increased physical fitness and stamina.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-5",
+        "text": "Setting a positive example for loved ones.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-6",
+        "text": "No more \"smoker's smell\" on clothes and breath.",
+        "icon": ""
+      },
+      {
+        "id": "option-23-7",
+        "text": "Contributing to a cleaner environment.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 3],
+        "text": "Every benefit you've recognized is a step towards a healthier, more fulfilling life. These motivations can be the cornerstone of your personalized cessation journey."
+      },
+      {
+        "range": [4, 5],
+        "text": "You're looking at a holistic improvement, from health to personal relationships. These benefits can be the guiding lights as you work towards quitting."
+      },
+      {
+        "range": [6, 7],
+        "text": "From personal well-being to environmental consciousness, your reasons are commendable. Let these benefits inspire you throughout your journey to quit."
+      }
+    ]
+  },
+  {
+    "id": "question-24",
+    "type": "single-choice",
+    "question": "Picture this: waking up and taking a deep, clear breath. How does that feel?",
+    "progressLabel": "Part 3 of 3: Bright future",
+    "options": [
+      {
+        "id": "option-24-1",
+        "text": "Absolutely refreshing! I miss that feeling.",
+        "icon": "",
+        "feedback": "That refreshing feeling can be your reality. Every smoke-free day brings you closer to experiencing it daily."
+      },
+      {
+        "id": "option-24-2",
+        "text": "I think it would be nice, but I'm not sure.",
+        "icon": "",
+        "feedback": "It's the little things that can make a big difference. A clear breath can be a simple yet profound joy of a smoke-free life."
+      },
+      {
+        "id": "option-24-3",
+        "text": "I've never really thought about it before.",
+        "icon": "",
+        "feedback": "Sometimes, we overlook the simple pleasures. Imagine enjoying every deep breath, every day. It's a part of the journey you're embarking on."
+      },
+      {
+        "id": "option-24-4",
+        "text": "It doesn't seem like a big deal to me.",
+        "icon": "",
+        "feedback": "That's okay! Everyone has their own motivations. As you continue, you might discover other benefits that resonate more with you."
+      }
+    ]
+  },
+  {
+    "id": "question-25",
+    "type": "multiple-choice",
+    "question": "We all have our reasons. What's your main motivation to quit smoking?",
+    "progressLabel": "Part 3 of 3: Bright future",
+    "options": [
+      {
+        "id": "option-25-1",
+        "text": "I want to improve my health.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-2",
+        "text": "I'm concerned about the financial costs.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-3",
+        "text": "I want to set a good example for my loved ones.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-4",
+        "text": "Environmental concerns.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-5",
+        "text": "I don't want to be controlled by an addiction.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-6",
+        "text": "Workplace or societal pressures.",
+        "icon": ""
+      },
+      {
+        "id": "option-25-7",
+        "text": "Other personal reasons.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "Your reasons are valid and powerful. Remembering them can be a driving force in your journey."
+      },
+      {
+        "range": [3, 5],
+        "text": "Multiple motivations can provide a strong foundation for your cessation journey. Keep these reasons close to your heart."
+      },
+      {
+        "range": [6, 7],
+        "text": "Every reason, big or small, can be a stepping stone towards a smoke-free life. Your journey is uniquely yours, and we're here to guide you through it."
+      }
+    ]
+  },
+  {
+    "id": "question-26",
+    "type": "multiple-choice",
+    "question": "Are there any external pressures or influences nudging you to quit, like workplace rules or societal views?",
+    "progressLabel": "Part 3 of 3: Bright future",
+    "options": [
+      {
+        "id": "option-26-1",
+        "text": "Yes, my workplace has strict rules against smoking.",
+        "icon": ""
+      },
+      {
+        "id": "option-26-2",
+        "text": "I feel societal pressure to quit.",
+        "icon": ""
+      },
+      {
+        "id": "option-26-3",
+        "text": "My family or friends often encourage me to quit.",
+        "icon": ""
+      },
+      {
+        "id": "option-26-4",
+        "text": "There are legal or policy restrictions in my area.",
+        "icon": ""
+      },
+      {
+        "id": "option-26-5",
+        "text": "I haven't really felt any external pressures.",
+        "icon": ""
+      },
+      {
+        "id": "option-26-6",
+        "text": "Other.",
+        "icon": ""
+      }
+    ],
+    "feedback": [
+      {
+        "range": [1, 2],
+        "text": "External factors can sometimes be the push we need. Use them as additional motivation on your journey."
+      },
+      {
+        "range": [3, 4],
+        "text": "The people around us and our environment can influence our choices. Embrace these nudges as they can be beneficial in your cessation journey."
+      },
+      {
+        "range": [5, 6],
+        "text": "Your journey is personal, and while external factors can play a role, your inner motivation is what truly matters. Stay true to your reasons and let them guide you."
+      }
+    ]
+  },
+  {
+    "id": "question-27",
+    "type": "single-choice",
+    "question": "Have you ever thought about the environmental impact of cigarette butts? It's quite a thing to ponder!",
+    "progressLabel": "Part 3 of 3: Bright future",
+    "options": [
+      {
+        "id": "option-27-1",
+        "text": "Yes, I'm aware and it concerns me.",
+        "icon": "",
+        "feedback": "It's commendable that you're thinking about the bigger picture. Every cigarette not smoked is a step towards a cleaner environment."
+      },
+      {
+        "id": "option-27-2",
+        "text": "I've heard about it but haven't given it much thought.",
+        "icon": "",
+        "feedback": "It's surprising how much of an impact those little butts can have on our planet. As you continue, you might find more reasons to strengthen your resolve."
+      },
+      {
+        "id": "option-27-3",
+        "text": "No, I've never considered the environmental impact.",
+        "icon": "",
+        "feedback": "Cigarette butts are one of the most littered items worldwide and can harm our environment. It's another perspective to consider on your journey."
+      },
+      {
+        "id": "option-27-4",
+        "text": "I know, and it's one of my reasons to quit.",
+        "icon": "",
+        "feedback": "That's a powerful reason! Protecting our planet is a noble cause, and your decision can make a difference."
+      }
+    ]
+  },
+  {
+    "id": "question-28",
+    "type": "multiple-choice",
+    "question": "Let's dream a bit. What's the one thing you'd love to achieve or experience once you're smoke-free?",
+    "options": [
+        {
+            "id": "option-28-1",
+            "text": "Improved health and fitness.",
+            "icon": "path/to/icon1.png"
+        },
+        {
+            "id": "option-28-2",
+            "text": "Saving money for something special.",
+            "icon": "path/to/icon2.png"
+        },
+        {
+            "id": "option-28-3",
+            "text": "Enjoying food and scents more.",
+            "icon": "path/to/icon3.png"
+        },
+        {
+            "id": "option-28-4",
+            "text": "Being a role model for loved ones.",
+            "icon": "path/to/icon4.png"
+        },
+        {
+            "id": "option-28-5",
+            "text": "Taking on new hobbies or activities.",
+            "icon": "path/to/icon5.png"
+        },
+        {
+            "id": "option-28-6",
+            "text": "Traveling without the need for smoke breaks.",
+            "icon": "path/to/icon6.png"
+        }
+    ],
+    "feedback": [
+        {
+            "range": [1, 2],
+            "text": "Every dream is a step towards a brighter future. Embracing these aspirations can be a driving force in your cessation journey."
+        },
+        {
+            "range": [3, 5],
+            "text": "These are wonderful aspirations! Imagine the joy and satisfaction of achieving them. Your personalized cessation journey can help pave the way."
+        },
+        {
+            "range": [6, 6],
+            "text": "So many exciting possibilities await you! With determination and a crafted plan, these dreams can become your reality."
+        }
+    ]
+  },
+  {
+    "id": "question-28",
+    "type": "multiple-choice",
+    "question": "Let's dream a bit. What's the one thing you'd love to achieve or experience once you're smoke-free?",
+    "options": [
+        {
+            "id": "option-28-1",
+            "text": "Improved health and fitness.",
+            "icon": ""
+        },
+        {
+            "id": "option-28-2",
+            "text": "Saving money for something special.",
+            "icon": ""
+        },
+        {
+            "id": "option-28-3",
+            "text": "Enjoying food and scents more.",
+            "icon": ""
+        },
+        {
+            "id": "option-28-4",
+            "text": "Being a role model for loved ones.",
+            "icon": ""
+        },
+        {
+            "id": "option-28-5",
+            "text": "Taking on new hobbies or activities.",
+            "icon": ""
+        },
+        {
+            "id": "option-28-6",
+            "text": "Traveling without the need for smoke breaks.",
+            "icon": ""
+        }
+    ],
+    "feedback": [
+        {
+            "range": [1, 2],
+            "text": "Every dream is a step towards a brighter future. Embracing these aspirations can be a driving force in your cessation journey."
+        },
+        {
+            "range": [3, 5],
+            "text": "These are wonderful aspirations! Imagine the joy and satisfaction of achieving them. Your personalized cessation journey can help pave the way."
+        },
+        {
+            "range": [6, 6],
+            "text": "So many exciting possibilities await you! With determination and a crafted plan, these dreams can become your reality."
+        }
+    ]
+  },
+  {
+    "id": "question-29",
+    "type": "single-choice",
+    "question": "How do you usually react when you achieve something? Do you celebrate or think about what could be better?",
+    "options": [
+        {
+            "id": "option-29-1",
+            "text": "I usually celebrate and take time to appreciate my achievements.",
+            "icon": "",
+            "feedback": "Celebrating your achievements can be a great motivator. As you embark on your cessation journey, remember to cherish every milestone, no matter how small."
+        },
+        {
+            "id": "option-29-2",
+            "text": "I often think about what I could have done better.",
+            "icon": "",
+            "feedback": "Reflection is a powerful tool, but don't forget to give yourself credit for the progress you make. Every step, even the small ones, counts in your personalized cessation journey."
+        },
+        {
+            "id": "option-29-3",
+            "text": "A bit of both – I celebrate but also reflect on improvements.",
+            "icon": "",
+            "feedback": "A balanced approach! Celebrating while also reflecting can provide both motivation and insights. This mindset will serve you well on your path to becoming smoke-free."
+        },
+        {
+            "id": "option-29-4",
+            "text": "I rarely take the time to acknowledge my achievements.",
+            "icon": "",
+            "feedback": "Recognizing and celebrating your achievements can be a source of motivation and joy. As you move forward, consider taking moments to appreciate your progress. It can make a difference!"
+        }
+    ]
+  },
+  {
+    "id": "question-30",
+    "type": "single-choice",
+    "question": "Where do you feel you are on your journey to quit smoking? Just thinking about it, planning, or already taking steps?",
+    "options": [
+        {
+            "id": "option-30-1",
+            "text": "Just thinking about it.",
+            "icon": "",
+            "feedback": "It's great that you're considering this change. Every journey begins with a thought. As you move forward, your personalized cessation journey will be here to guide you."
+        },
+        {
+            "id": "option-30-2",
+            "text": "I've started planning but haven't taken any concrete steps yet.",
+            "icon": "",
+            "feedback": "Planning is a crucial step! It shows you're serious about making a change. Keep going, and remember that every bit of preparation will make your journey smoother."
+        },
+        {
+            "id": "option-30-3",
+            "text": "I've already taken some steps towards quitting.",
+            "icon": "",
+            "feedback": "Taking action is commendable! Every step you take brings you closer to a smoke-free life. Stay committed, and let your personalized cessation journey support you."
+        },
+        {
+            "id": "option-30-4",
+            "text": "I'm not sure where I stand right now.",
+            "icon": "",
+            "feedback": "It's okay to be unsure. Reflecting on where you stand is a part of the process. As you continue, you'll gain more clarity and direction for your cessation journey."
+        }
+    ]
+  },
+  {
+    "id": "question-31",
+    "type": "single-choice",
+    "question": "How would you describe your overall satisfaction with your current lifestyle?",
+    "options": [
+        {
+            "id": "option-31-1",
+            "text": "I'm quite satisfied and content.",
+            "icon": "",
+            "feedback": "That's wonderful to hear! Embracing a smoke-free life can further enhance your contentment. Your personalized cessation journey can complement your current lifestyle."
+        },
+        {
+            "id": "option-31-2",
+            "text": "It's okay, but there's room for improvement.",
+            "icon": "",
+            "feedback": "Recognizing areas for improvement is the first step towards positive change. As you work towards a smoke-free life, you'll find ways to elevate your lifestyle even more."
+        },
+        {
+            "id": "option-31-3",
+            "text": "I'm not very satisfied; I want to make significant changes.",
+            "icon": "",
+            "feedback": "Desire for change is powerful. As you embark on your smoke-free journey, you'll discover new avenues to enhance your lifestyle and overall well-being."
+        },
+        {
+            "id": "option-31-4",
+            "text": "I haven't really thought about it.",
+            "icon": "",
+            "feedback": "Taking a moment to reflect on our lifestyle can be enlightening. As you continue, consider how a smoke-free life might fit into the picture you envision for yourself."
+        }
+    ]
+  },
+  {
+    "id": "question-32",
+    "type": "multiple-choice",
+    "question": "What are your future goals once you've quit smoking?",
+    "options": [
+        {
+            "id": "option-32-1",
+            "text": "Improve my overall health and fitness.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-2",
+            "text": "Save money and allocate it to other priorities.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-3",
+            "text": "Spend more quality time with loved ones without the interruption of smoking.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-4",
+            "text": "Pursue new hobbies or activities I've been putting off.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-5",
+            "text": "Travel and explore new places without the constraint of needing to smoke.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-6",
+            "text": "Focus on personal growth and self-improvement.",
+            "icon": ""
+        },
+        {
+            "id": "option-32-7",
+            "text": "I haven't set any specific goals yet.",
+            "icon": ""
+        }
+    ],
+    "feedback": [
+        {
+            "range": [1, 2],
+            "text": "Setting clear goals is a great motivator! These aspirations can guide your personalized cessation journey, helping you stay on track and find fulfillment."
+        },
+        {
+            "range": [3, 5],
+            "text": "These are wonderful aspirations! Embracing a smoke-free life can open up so many new opportunities and experiences. Your crafted plan will consider these goals to make your journey even more rewarding."
+        },
+        {
+            "range": [6, 7],
+            "text": "With so many goals in mind, you're setting yourself up for a transformative journey! Every step you take towards a smoke-free life will bring you closer to these aspirations. Your personal quit plan will be tailored to support these ambitions."
+        },
+        {
+            "range": [7],
+            "text": "That's okay! Sometimes, the journey itself reveals the goals. As you progress, you might find new aspirations shaping up. Your personalized cessation journey will adapt and support you every step of the way."
+        }
+    ]
+  }
+]
