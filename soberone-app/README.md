@@ -1,1 +1,0 @@
-# SoberOne Cross-platform Application

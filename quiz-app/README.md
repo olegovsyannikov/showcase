@@ -1,1 +1,0 @@
-# Fast Quiz Builder Application
