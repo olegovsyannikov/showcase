@@ -1,0 +1,27 @@
+build:android:dev:
+  stage: build
+  image: jangrewe/gitlab-ci-android
+  rules:
+    - when: manual
+  before_script:
+    - cd ./android
+    - export GRADLE_USER_HOME=$(pwd)/.gradle
+    - echo "$GOOGLE_SERVICES_JSON" | base64 -d > app/google-services.json
+    - echo "$KEYSTORE" | base64 -d > my.keystore
+    - echo "keystorePath=$(pwd)/my.keystore" > signing.properties
+    - echo "keystorePassword=$KEYSTORE_PASSWORD" >> signing.properties
+    - echo "keyAlias=$KEY_ALIAS" >> signing.properties
+    - echo "keyPassword=$KEY_PASSWORD" >> signing.properties
+  script:
+    - ./gradlew assembleDebug
+  cache:
+    key: '$CI_COMMIT_REF_SLUG'
+    paths:
+      - node_modules/
+      - android/.gradle/
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+    - android/app/build/outputs/apk/debug/app-debug.apk
+  tags:
+    - artifacts

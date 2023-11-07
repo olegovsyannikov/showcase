@@ -1,0 +1,77 @@
+.tooltip[data-tooltip]
+    position relative
+    &:before
+        position absolute
+        z-index 1020
+        content ''
+        border-style: solid;
+        border-color: transparent;
+    &:after
+        content attr(data-tooltip)
+        box-sizing border-box
+        padding: 0 8px;
+        line-height: 22px;
+        border-radius 4px
+        text-align left
+        font-size 11px
+        display block
+        font-family $text-font-family
+        background rgba(0,0,0,0.9)
+        color $color-white
+    &:before,
+    &:after
+        position absolute
+        z-index 1000
+        visibility hidden
+        pointer-events none
+        transform translate(-50%, 0)
+        transition 0.3s ease
+        transition-delay 0ms
+        opacity 0
+
+    &:focus
+        &:before,
+        &:after
+            visibility visible
+            transition-delay 1s
+            opacity 1
+
+.tooltip[data-tooltip='']:before,
+.tooltip[data-tooltip='']:after
+    display none !important
+
+.tooltip
+    &--bottom[data-tooltip]
+        &:before
+            border-width: 0 5px 5px 5px;
+            border-bottom-color: rgba(0,0,0,0.9)
+        &:after
+            margin-top: 5px;
+        &:before,
+        &:after
+            top: 100%
+            left: 50%
+
+    &--top[data-tooltip]
+        &:before
+            border-width: 5px 5px 0 5px;
+            border-top-color: rgba(0,0,0,0.9)
+        &:after
+            margin-bottom: 5px;
+        &:before,
+        &:after
+            bottom: 100%
+            left: 50%
+
+    &--left[data-tooltip]
+        &:before
+            border-width: 5px 0 5px 5px;
+            border-left-color: rgba(0,0,0,0.9)
+        &:after
+            margin-right: 8px;
+            max-width: 532px;
+        &:before,
+        &:after
+            top: 50%;
+            right: 100%
+            transform: translate(0, -50%);

@@ -1,0 +1,203 @@
+@charset 'UTF-8'
+//@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import '~@ionic/react/css/core.css';
+@import './styles/normalize';
+@import './styles/helper';
+@import './styles/general';
+@import './styles/form';
+@import './styles/list';
+@import './styles/tooltip';
+@import './styles/themes';
+@import './styles/variables';
+
+html {
+  // height: 100vh;
+  background: $color.main-bg;
+}
+
+body {
+  // height: 100vh;
+  background: $color.main-bg;
+}
+
+#app {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  font-family: $font.main;
+  position: relative;
+  max-width: 768px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: $color.main-bg;
+}
+
+.chart img {
+  max-width: 100%;
+}
+
+.tooltip[data-tooltip] {
+  &:after {
+    content: attr(data-tooltip);
+    box-sizing: border-box;
+    padding: 14px 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-line;
+    background: rgba(#4E4E6D, 0.95);
+    color: $color.white;
+    text-align: center;
+    position: absolute;
+    z-index: 996;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+}
+
+.tooltip[data-tooltip]:hover {
+  &:after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip[data-tooltip='']:after {
+  display: none !important;
+}
+
+.tooltip {
+  &--bottom[data-tooltip] {
+    &:after {
+      margin-top: 5px;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--top[data-tooltip] {
+    &:after {
+      margin-bottom: 5px;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--left[data-tooltip] {
+    &:after {
+      margin-right: 8px;
+      max-width: 532px;
+      top: 50%;
+      right: 100%;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.dropdown {
+  display: none;
+  max-width: 280px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px 0 rgba($color.primary, 0.08), 0 8px 8px 0 rgba($color.primary, 0.08);
+  background: #FAFAFA;
+  padding: 8px 0;
+  outline: none;
+
+  &__item {
+    line-height: 48px;
+    padding: 0 24px 0 64px;
+
+    &--checked {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '\F104';
+        font-family: icons;
+        left: 24px;
+        top: 0px;
+        font-size: 24px;
+      }
+    }
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__list + &__list {
+    border-top: 1px solid rgba($color.primary, 0.1);
+  }
+
+  &--active {
+    position: absolute;
+    right: 16px;
+    top: 48px;
+    display: block;
+  }
+
+  &--profile &__item {
+    padding: 0 24px;
+  }
+}
+
+// Стили для IOS
+.body--ios .header {
+  top: 20px;
+}
+
+.body--ios footer {
+  padding-bottom: 20px;
+}
+
+.body--ios .section, .body--ios .drawer {
+  padding-top: 76px;
+}
+
+.body--ios .section--home {
+  padding-top: 0;
+  transition: inherit;
+}
+
+.body--ios .section--chart {
+  padding-top: 20px;
+}
+
+.body--ios .section--header {
+  padding-top: 76px;
+}
+
+// // Стили для Android
+// .body--android .header
+// top: 25px;
+//
+// .body--android .section
+// .body--android .drawer
+// padding-top: 81px;
+//
+// .body--android .section--home
+// padding-top: 0;
+// transition: inherit;
+//
+// .body--android .section--chart
+// padding-top: 25px;
+//
+// .body--android .section--header
+// padding-top: 81px;
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $theme.bg;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

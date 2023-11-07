@@ -1,0 +1,123 @@
+@import '../../styles/helper';
+
+.card--task-header .card
+    &__body &__title
+        font-size: 32px;
+        font-weight: bold;
+
+.task
+    position: relative;
+    background: #ffffff;
+    flex: 8;
+    &__info
+        padding: 20px;
+        background: $theme.task.intro;
+    &__answers
+        padding: 20px;
+        background: $color.grey-4;
+        h4
+            font-family: $font.main;
+            font-size: 20px;
+            color: rgba(0,0,0,0.87);
+            letter-spacing: 0;
+            line-height: 28px;
+            margin-bottom: 16px;
+    &__material,
+    &__text
+        background: $color.white
+        padding: 20px 20px 0 20px;
+    &__material:last-child,
+    &__text:last-child
+        padding: 20px;
+    &__download
+        padding: $color.white
+        background: #ffffff;
+        margin-bottom: 1px;
+    &__action
+        padding: 20px;
+        background: #ffffff;
+        &--sticky
+          position: sticky;
+          bottom: 0px;
+          top: 0px;
+          z-index: 999;
+          box-shadow: inset 0px 1px 0px rgba(8,8,51,0.04), inset 0px -1px 0px rgba(8,8,51,0.08);
+    &__response
+        position: relative;
+        background: $theme.task.response.bg;
+        padding: 28px 20px 20px 20px;
+        &-content
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            background: $color.white;
+            box-shadow: 0px 5px 10px rgba($color.primary, 0.06);
+            &:before
+                position: absolute;
+                content: "";
+                left: 24px;
+                top: -8px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 8px 8px 8px;
+                border-color: transparent transparent $color.white transparent;
+            h4
+                font-size: 24px;
+                color: rgba($color.primary,0.89);
+                letter-spacing: 0;
+                line-height: 32px;
+            p
+                font-size: 16px;
+                color: rgba($color.primary,0.89);
+                line-height: 24px;
+            p + p
+                margin-top: 12px;
+            h4 + p
+                margin-top: 16px;
+
+    &__response + &__info
+        padding-top: 8px;
+
+    &__text + &__answers
+        box-shadow: inset 0px 1px 0px rgba($color.primary,0.08);
+
+.task .block
+    &--my-answers
+        background: $theme.task.myAnswers.bg;
+
+.question
+    &__title
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        p {
+            display: inline;
+        }
+    & + &
+        margin-top: 12px;
+
+.author
+    display: flex;
+    align-items: center;
+    &__avatar
+        height: 64px;
+        width: 64px;
+        margin-right: 12px;
+        border-radius: 50%;
+        overflow: hidden;
+    &__img
+        display: block;
+        width: 64px;
+        height: 64px;
+    &__name
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: rgba($color.primary, 0.89);
+    &__position
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        color: rgba($color.primary, 0.54);

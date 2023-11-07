@@ -1,0 +1,95 @@
+.calendar {
+  display: flex;
+
+  &--home {
+    padding: 16px;
+  }
+
+  &__item {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: $color.primary;
+    &-day {
+      font-size: 11px;
+      color: $theme.calendar.day;
+    }
+    &-date {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $theme.calendar.date.color;
+      box-shadow: inset 0px 0px 0px 2px $theme.calendar.date.border !important;
+      &--yes {
+        box-shadow: none !important;
+        background: $theme.calendar.yes.bg;
+        color: $theme.calendar.yes.color;
+      }
+      &--no {
+        box-shadow: none !important;
+        background: $theme.calendar.no.bg;
+        color: $theme.calendar.no.color;
+      }
+      &--today {
+        box-shadow: none;
+        background: $theme.calendar.today.bg;
+        color: $theme.calendar.today.color;
+      }
+    }
+  }
+}
+
+.week-summary {
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: $theme.home.week;
+  &__icon {
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+  }
+}
+
+.tracker {
+  position: relative;
+  &__content {
+    height: 122px;
+    overflow: hidden;
+  }
+  &__diary {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    &-content {
+      margin: 15px 16px 0;
+      border: solid 1px $theme.tracker.dayBorder;
+      border-radius: 16px;
+    }
+    &-link {
+      text-decoration: none;
+    }
+  }
+}
+
+.tracker-control {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 20px 16px;
+  text-align: center;
+  z-index: 1;
+  &__title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__button {
+    border-radius: 20px;
+    padding: 0 40px;
+  }
+  &__button + &__button {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "{{fontName}}";
+	src: {{{src}}};
+}
+
+{{baseSelector}} {
+    font-family: '{{fontName}}', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+{{#each codepoints}}
+.{{../classPrefix}}{{@key}}:before {
+	content: "\\{{this}}";
+}
+{{/each}}

@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+  Sober One iOS App
+*/
+
+"NSUserTrackingUsageDescription" = "Разрешите отслеживание для персонализации программы и чтобы получать наиболее подходящие материалы.";
+"NSCameraUsageDescription" = "Разрешите доступ к вашей камере для обновления изображения профиля.";

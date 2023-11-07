@@ -1,0 +1,11 @@
+{
+	"appId": "one.getsober.soberone",
+	"appName": "SoberOne",
+	"bundledWebRuntime": false,
+	"npmClient": "yarn",
+	"webDir": "build",
+	"cordova": {},
+	"server": {
+		"url": "https://app.getsober.one"
+	}
+}

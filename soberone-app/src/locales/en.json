@@ -1,0 +1,586 @@
+{
+  "404": {
+    "title": "Oops!",
+    "text": "This is not the page you are looking for"
+  },
+  "welcome": {
+    "logo": "Sober One",
+    "entrance": {
+      "apple": "Continue with Apple",
+      "consent1": "I've read and accepted ",
+      "consent2": "you agree with ",
+      "consent3": "User Agreement",
+      "consent4": "privacy policy",
+      "consent5": "and",
+      "continue": "Continue without registration",
+      "email": "or a bit slower with email",
+      "google": "Continue with Google",
+      "sign_in": "Sign In",
+      "sign_up": "Sign Up",
+      "title": "Log in or sign up quickly",
+      "vk": "Continue with VK"
+    },
+    "intro": {
+      "title": "Your personal assistant helping deal with drinking",
+      "description": "Your Personal Drinking Assistant",
+      "start": "Start",
+      "enter": "I have an account",
+      "payed": "We've received your payment. Now just start using the app or sign in to your account.",
+      "startPremium": "Start with Sober Premium"
+    },
+    "entrance2": {
+      "title": "One final step"
+    }
+  },
+  "auth": {
+    "title": "Sign In",
+    "hello": "Hello again!🤗",
+    "labels": {
+      "email": "Email",
+      "password": "Password (more than 6 symbols)"
+    },
+    "button": "Sign In",
+    "passwordRecovery": "Recover password"
+  },
+  "recovery": {
+    "title": "Password recovery",
+    "submit": "Get new password",
+    "success1": "Instructions have been sent",
+    "success2": "Check email",
+    "success3": "Please check your spam folder if you haven't found our message in your inbox. If this doesn't help, email us",
+    "success4": "we're happy to help"
+  },
+  "register": {
+    "title": "Sign Up",
+    "success": "Check your mail to finish 💌",
+    "submit": "Sign Up",
+    "consent1": "By registering account you're accepting ",
+    "consent2": "User Agreement"
+  },
+  "home": {
+    "tasks": {
+      "title": "Daily"
+    },
+    "done": {
+      "title": "All done for now.",
+      "text": "Have some rest and come back later."
+    },
+    "goal": {
+      "title": "My Goal",
+      "value": "Set in the profile 👉"
+    }
+  },
+  "messages": {
+    "error": {
+      "title": "Oops, something wrong",
+      "text": "Try again later or start with home screen"
+    },
+    "diary": {
+      "filter": {
+        "text": "Try to play with filters",
+        "title": "Seems it's empty"
+      },
+      "empty": {
+        "title": "Nothing here yet",
+        "text": "Add your first diary now"
+      },
+      "epmty": {}
+    },
+    "filter": {
+      "empty": {}
+    },
+    "tasks": {
+      "filter": {
+        "title": "Seems it's empty",
+        "text": "Try to play with filters"
+      },
+      "done": {
+        "title": "All done for now.",
+        "text": "Have some rest and come back later."
+      },
+      "favorites": {
+        "title": "This list is empty",
+        "text": "Start collecting favorite items to keep them close"
+      }
+    },
+    "premium": {
+      "title": "Congratulations!",
+      "text": "Your Premium status has been successfully activated and will be valid until"
+    }
+  },
+  "tracker": {
+    "calendar": {
+      "summary": "This week 2 times more than week before"
+    },
+    "result": {
+      "noBooze": "No booze on the {{date}}",
+      "booze": "Boozed on the {{date}}"
+    },
+    "question": "Did you booze {{date}}?",
+    "disabled": "You know future?",
+    "buttons": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "today": "today",
+    "yesterday": "yesterday",
+    "2daysago": "2 days ago",
+    "preposition": "on"
+  },
+  "stages": {
+    "introduction": "Introduction",
+    "contemplation": "Contemplation",
+    "preparation": "Preparation",
+    "action": "Action",
+    "maintenance": "Maintenance"
+  },
+  "profile": {
+    "saved": "Profile has been saved.",
+    "avatarUpload": "Upload avatar",
+    "signUpLink": "Sign Up",
+    "signUpTip": " in order not to lose progress",
+    "save": "Save profile",
+    "settings": {
+      "success": "Settings have been saved.",
+      "error": "Error while saving :(",
+      "notifications": {
+        "title": "Notifications",
+        "tasksTime": "Time",
+        "tasksSwitch": "Notify me about new tasks",
+        "diarySwitch": "Remind me about diary",
+        "diaryTime": "Time"
+      },
+      "tasks": {
+        "title": "Tasks",
+        "showMy": "Show my answers to others by default"
+      },
+      "subscription": {
+        "title": "Subscription",
+        "autoRenew": "Auto renew subscription",
+        "active": "Active. For cancellation ",
+        "inactive": "Inactive. For activation ",
+        "link": "let us know in the chat"
+      },
+      "title": "App Settings",
+      "language": {
+        "title": "Language"
+      }
+    },
+    "title": "Profile",
+    "payments": {
+      "title": "Subscription",
+      "priceLabel": "$/month",
+      "save": "save",
+      "renew1": "Subscription renews automatically.",
+      "renew2": "You can cancel it anytime.",
+      "continue": "Continue",
+      "sign": "Sign In or Sign Up",
+      "signed": "You entered as",
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "pay": "Payment",
+      "subscribeButton": "Subscribe for {{price}}$ per month",
+      "safePayment": "100% safe payment. We'll refund if you won't be happy with Sober Premium.",
+      "choosePlan": "Choose Plan"
+    },
+    "premium": "Premium",
+    "premiumUntil": "Premium until"
+  },
+  "forms": {
+    "name": "Name",
+    "birthDate": "Birth date",
+    "city": "City",
+    "about": "Few words about me",
+    "sobrietyStart": "Sobriety started at",
+    "apply": "Apply",
+    "refresh": "Refresh",
+    "goal": "My personal goal"
+  },
+  "tasks": {
+    "filter": {
+      "stagesTitle": "Stages",
+      "typeTitle": "Type",
+      "title": "Filter"
+    },
+    "item": {
+      "done": "Task is done, nice!",
+      "notDone": "Task is not finished",
+      "form": {
+        "title": "Answer questions",
+        "answerLabel": "Answer",
+        "showMy": "Show my answers to others",
+        "submit": "Submit"
+      },
+      "myAnswers": {
+        "title": "Your answers",
+        "empty": "Empty yet"
+      },
+      "othersAnswers": {
+        "title": "Other people answers",
+        "empty": "Empty yet. Be the first!",
+        "more": "Show more"
+      },
+      "next": "Completed, move on!",
+      "actionButton": {
+        "test": "Take the test",
+        "edit": "Edit answers",
+        "start": "Run the task",
+        "continue": "Continue",
+        "next": "OK, got it!"
+      },
+      "favorites": {
+        "removed": "Removed from favorites",
+        "saved": "Saved to favorites😘"
+      },
+      "response": {
+        "name": "Marat Aghinyan",
+        "jobTitle": "Psychiatrist, Sober One founder"
+      },
+      "showArticle": "Show Article",
+      "perform": {
+        "draftSaved": "Draft has been saved."
+      }
+    },
+    "types": {
+      "1": "Info",
+      "2": "Self assess",
+      "3": "Read",
+      "4": "Cinema",
+      "5": "Book",
+      "6": "Test",
+      "7": "Watch",
+      "8": "Habits",
+      "9": "Mental",
+      "10": "Relapse prevention",
+      "11": "Story"
+    },
+    "list": {
+      "activeTitle": "Active tasks",
+      "title": "Insights",
+      "feedTitle": "Feed",
+      "favoritesTitle": "Favorites",
+      "completedTitle": "Completed ({{count}})",
+      "roadMap": "Road map"
+    },
+    "statuses": {
+      "new": "New",
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "premium": "Premium"
+    }
+  },
+  "counter": {
+    "till": "Till",
+    "years": "years",
+    "till10Years": "Till 10 years",
+    "till5Years": "Till 5 years",
+    "till3Years": "Till 3 years",
+    "till1Year": "Till 1 year",
+    "till6Months": "Till 6 months",
+    "till3Months": "Till 3 months",
+    "till1Month": "Till 1 month",
+    "till2Weeks": "Till 2 weeks",
+    "till1Week": "Till 1 week",
+    "till3Days": "Till 3 days",
+    "firstDay": "First day",
+    "left": "left",
+    "leftPlural": "left",
+    "year": {
+      "plural2": "years",
+      "pluralMany": "years",
+      "one": "year"
+    },
+    "month": {
+      "one": "month",
+      "plural2": "months",
+      "pluralMany": "months"
+    },
+    "day": {
+      "one": "day",
+      "plural2": "days",
+      "pluralMany": "days"
+    },
+    "till3days": "Till 3 days"
+  },
+  "slider": {
+    "select": "Select value"
+  },
+  "cpayment": {
+    "name": "Sober One Subscription",
+    "mon": "mon",
+    "success": "Yay! You've subscribed successfully.",
+    "title": "Subscription"
+  },
+  "menu": {
+    "home": "Sober One",
+    "tasks": "Tasks",
+    "diary": "Diary",
+    "support": {
+      "description": "We answer on weekdays from 9 a.m. till 9 p.m.",
+      "title": "Chat with support"
+    },
+    "more": "More",
+    "blog": "Blog",
+    "tests": "Tests",
+    "settings": "App Settings",
+    "editProfile": "Edit Profile",
+    "materials": "Materials",
+    "faq": "Frequent questions",
+    "donate": "Help us"
+  },
+  "diary": {
+    "today": "Today",
+    "ratings": {
+      "0": "Terrible",
+      "1": "Awful",
+      "2": "Bad",
+      "3": "Okay",
+      "4": "Good",
+      "5": "Great",
+      "6": "Perfect"
+    },
+    "filter": {
+      "ratingTitle": "Rating",
+      "title": "Diary filter"
+    },
+    "title": "Diary",
+    "emotions": {
+      "valence": {
+        "min": "Negative",
+        "max": "Positive",
+        "labels": {
+          "0": "Okay",
+          "1": "Good",
+          "2": "Great",
+          "3": "Perfect!",
+          "min": "Negative",
+          "max": "Positive",
+          "-3": "Terrible",
+          "-2": "Awful",
+          "-1": "Bad"
+        }
+      },
+      "intensity": {
+        "max": "High",
+        "min": "Low",
+        "labels": {
+          "0": "Low",
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "High",
+          "max": "High",
+          "min": "Low"
+        }
+      },
+      "craving": {
+        "labels": {
+          "0": "None",
+          "1": "A bit",
+          "2": "Disturbing",
+          "3": "Bearable",
+          "4": "Kinda heavy",
+          "5": "Suffering",
+          "6": "Help me!",
+          "min": "Low",
+          "max": "High"
+        }
+      }
+    },
+    "triggers": [
+      "Rest",
+      "Co-worker",
+      "Conflict",
+      "Evening",
+      "Family",
+      "Friends",
+      "Go out",
+      "Holiday",
+      "Partner",
+      "Vacation",
+      "Weekend",
+      "Bored",
+      "Loneliness"
+    ],
+    "useQuantity": {
+      "labels": {
+        "0": "None",
+        "1": "1-2 units",
+        "2": "3-4 units",
+        "3": "5-6 units",
+        "4": "7-8 units",
+        "5": "9+ units",
+        "min": "Less",
+        "max": "More"
+      }
+    },
+    "item": {
+      "draftSaved": "Diary has been saved",
+      "rating": {
+        "title": "How do I feel",
+        "extended": {
+          "title": "Extended evaluation",
+          "sleep": {
+            "title": "Sleep",
+            "tooltip": "Do you go to sleep easily?"
+          },
+          "mood": {
+            "title": "Mood",
+            "tooltip": "What mood did you have?"
+          },
+          "peace": {
+            "title": "Peace",
+            "tooltip": "Did you feel yourself calm and confident?"
+          },
+          "activity": {
+            "title": "Activity",
+            "tooltip": "How active have you been this day?"
+          },
+          "motivation": {
+            "title": "Motivation for sobriety",
+            "tooltip": "Evaluate your attitude."
+          }
+        }
+      },
+      "updated": "Saved diary👌",
+      "trackerTitle": "Did you booze?",
+      "detailsTitle": "Have anything else to add?",
+      "feelingsTitle": "What do I feel",
+      "cravingTitle": "Craving intensity",
+      "emotionsValenceTitle": "How did you feel?",
+      "emotionsIntensityTitle": "Emotions intensity",
+      "triggersTitle": "What triggered you?",
+      "date": "Date",
+      "tracker": {
+        "yes": "Yes",
+        "no": "Nope"
+      },
+      "useQuantityTitle": "How much?",
+      "noTriggers": "No triggers"
+    },
+    "stats": {
+      "tips": {
+        "usageMore": "Last 7 days: {{delta}} more than before",
+        "usageLess": "Last 7 days: {{delta}} less than before",
+        "usageSame": "Same drinking days as before",
+        "usageEmpty": "Start tracking and you'll know"
+      }
+    },
+    "listItem": {
+      "useQuantity": "Drank",
+      "feelings": "Feelings",
+      "craving": "Craving"
+    }
+  },
+  "more": {
+    "notRegistered": "Not registered",
+    "logOut": "Log out",
+    "sign": "Sign In or Sign Up",
+    "subscribe": "Subscribe to Premium",
+    "paymentProcessing": "Payment processing..."
+  },
+  "tests": {
+    "item": {
+      "startButton": "Begin the test",
+      "result": "Your current result:"
+    },
+    "title": "Tests for You"
+  },
+  "dateLabel": {
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "backend": {
+    "messages": {
+      "error": {
+        "registration": "Oops! An error occurred while registering",
+        "notFound": "Not Found"
+      },
+      "success": {
+        "registration": "You are successfully registered"
+      },
+      "diary": {
+        "notFound": "Diary record not found",
+        "notEditable": "Diary is not editable",
+        "notSaved": "Diary is not saved"
+      },
+      "payment": {
+        "invalid": "Invalid request",
+        "planNotFound": "Tariff plan is not found",
+        "notCreated": "cant create payment",
+        "notFound": "no payments found for user",
+        "notCheckedStatus": "cant check status for payment"
+      },
+      "task": {
+        "notFound": "Task not found",
+        "immutable": "Task is immutable",
+        "notUpdated": "Something goes wrong, cant update task",
+        "updated": "Task updated"
+      },
+      "test": {
+        "notFound": "Test not found",
+        "notFetched": "Can't fetch test result",
+        "notAdded": "Test result add error",
+        "added": "Test result added.",
+        "noCalculated": "Calculated result is not set"
+      },
+      "user": {
+        "tokenNotFound": "Token is not found",
+        "emailConfirmedBefore": "This email was confirmed before",
+        "emailConfirmed": "All fine, email confirmed👌",
+        "notFound": "User is not found",
+        "invalidPassword": "Wrong password",
+        "wrongUser": "User not found or wrong password",
+        "badEmail": "Bad symbols in email😱",
+        "errorExists": "Oops, email is already exists",
+        "emailMandatory": "Email is mandatory",
+        "noPassword": "We can't register without password😔",
+        "unknownCreateError": "Unknown error while creating user",
+        "unknownUpdaetError": "Unknown error while updating user",
+        "tokenError": "Error while confirmation token creating",
+        "passwordUpdateError": "Error while saving password",
+        "emailSendError": "Error while sending email"
+      },
+      "userLog": {
+        "empty": "Empty request",
+        "error": "Error while logging request"
+      }
+    }
+  },
+  "agreementLink": "https://getsober.one/legal/terms",
+  "privacyLink": "https://getsober.one/legal/privacy",
+  "premiumLink": "https://sober.li/en/premium/?token={{token}}&user_id={{userId}}",
+  "promo": {
+    "continue": "Continue",
+    "title": "Goal in 30 days",
+    "choose": "Choose your plan",
+    "trial": {
+      "inactive": "Not sure yet? Activate a 7-day free trial",
+      "active": "Free trial period is active"
+    },
+    "start_trial": "Start 7-Days Free Trial",
+    "save": "Save",
+    "free": "7 days free",
+    "then": "Then",
+    "year": "year",
+    "only": "only",
+    "month": "month",
+    "for": "for",
+    "review": [
+      null,
+      "The idea is awesome, I'm going through the initial course so far I'm delighted, and even as if it helps. The main thrill of this is that you see the result and that gives the feeling that you are not alone and you have an assistant.",
+      "Created by a psychiatrist, there is a very scientifically thought-out system and the application is very convenient. When I began to use it myself, it became easier to stay sober, and also to understand when and why I want to drink.",
+      "The app is cool. Thank you for the work done. I think the price is adequate. Subscribed. I am very glad, I have high hopes for your team. "
+    ],
+    "benefits": [
+      "Guided courses",
+      "Chat with psychologists",
+      "Advanced self-reflection tools"
+    ],
+    "info": "The subscription will be automatically renewed for the selected period of time until you cancel it",
+    "mutedInfo": "A 7-day free trial period is available for a 1-year subscription only. You can cancel your subscription at any time before the trial ends. The full price will be charged from your card when the trial period expires."
+  },
+  "getPremiumFromChat": "To subscribe, write to the support chat"
+}

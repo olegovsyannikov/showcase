@@ -1,0 +1,39 @@
+.progress {
+    position: relative;
+    &__svg {
+        transform: rotate(-90deg);
+        vertical-align: middle;
+        display: inline-block;
+    }
+    &__meter,
+    &__value {
+        fill: none;
+    }
+    &__meter {
+        stroke: $theme.progressbar.meter;
+    }
+    &__value {
+        stroke: $theme.progressbar.value;
+        stroke-linecap: round;
+    }
+
+    &__icon {
+        position: absolute;
+        color: $theme.progressbar.icon;
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--stage &__value {
+        stroke: $theme.progressbar.stage;
+    }
+
+    &--sobriety &__value {
+        stroke: $theme.progressbar.sobriety;
+    }
+}

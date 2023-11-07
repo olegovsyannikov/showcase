@@ -1,0 +1,29 @@
+ext {
+    minSdkVersion = 22
+    compileSdkVersion = 33
+    targetSdkVersion = 33
+
+    junitVersion = '4.13.2'
+    firebaseMessagingVersion =  '20.1.2'
+    cordovaAndroidVersion =  '10.0.0'
+
+    androidxAppCompatVersion = '1.6.1'
+    androidxCoreVersion =  '1.10.0'
+    androidxMaterialVersion =  '1.1.0-rc02'
+    androidxBrowserVersion =  '1.2.0'
+    androidxLocalbroadcastmanagerVersion =  '1.0.0'
+    androidxExifInterfaceVersion = '1.2.0'
+    androidxJunitVersion =  '1.1.5'
+    androidxEspressoCoreVersion =  '3.5.1'
+
+    playServicesLocationVersion =  '17.0.0'
+    playServiceAuthVersion = '20.5.0'
+    playServiceWalletVersion = '19.1.0'
+
+    firebaseDynamicLinksVersion = '21.1.0'
+    installReferrerVersion = '2.2'
+
+    vkSdkVersion = '3.1.0'
+    intercomSdkVersion = '14.2.0'
+    amplitudeSdkVersion = '3.35.1'
+}

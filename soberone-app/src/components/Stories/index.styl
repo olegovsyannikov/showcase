@@ -1,0 +1,27 @@
+.story
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  background: $theme.story.bg;
+
+  &__content
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    & > div > div:first-child
+      width: 95% !important;
+
+    & > div > div > div
+      height: 100%;
+
+      & img
+        height: 100%;
+        object-fit: cover;

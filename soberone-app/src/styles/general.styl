@@ -1,0 +1,137 @@
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: $font.main;
+  color: $color.primary;
+  font-size: $size.main;
+  background-color: $color.white;
+
+  & > div:not(:first-child) {
+    span {
+      line-height: 1.2em;
+    }
+  }
+}
+
+input[type='date'] {
+  &::-webkit-datetime-edit-year-field:not([aria-valuenow]), &::-webkit-datetime-edit-month-field:not([aria-valuenow]), &::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+  }
+}
+
+input, textarea {
+  font-family: $font.main;
+}
+
+.link {
+  color: $color.accent;
+  cursor: pointer;
+
+  &__icon, &__text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__icon {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__icon + &__text {
+    line-height: 24px;
+    margin-left: 8px;
+  }
+
+  &[rel='external'] {
+    padding-right: 24px;
+  }
+
+  &--primary {
+    display: inline-block;
+    color: rgba($color.primary, 0.54);
+  }
+
+  &--inverse {
+    display: inline-block;
+    color: rgba($color.white, 0.7);
+  }
+
+  &--recovery {
+    line-height: 36px;
+  }
+
+  &--sm {
+    font-size: 14px;
+  }
+
+  &--add &__text {
+    font-size: 14px;
+    font-weight: normal;
+    color: $color.accent;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &--add &__icon + &__text {
+    margin-left: 8px;
+  }
+
+  &--white {
+    color: $color.white;
+  }
+
+  &--underline {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--download {
+    position: relative;
+    padding-left: 32px;
+    line-height: 24px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 24px;
+      font-size: 24px;
+      font-family: 'icons', serif;
+      content: '\F122';
+    }
+  }
+}
+
+.color {
+  &--white {
+    color: $color.white;
+  }
+}
+
+.position {
+  &--bottom {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+}

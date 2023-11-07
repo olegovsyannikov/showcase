@@ -1,0 +1,76 @@
+.home {
+  background: #dedede;
+
+  &-header {
+    display: flex;
+    padding: 16px 16px;
+    &__more {
+      flex: 1;
+      text-align: left;
+      .so-button {
+        position: relative;
+        left: -4px;
+      }
+    }
+    &__main {
+      flex: 4;
+      margin-top: 13px;
+      text-align: center;
+      &-label {
+        font-size: 13px;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      &-goal {
+        font-size: 15px;
+        color: $theme.home.goal;
+      }
+    }
+    &__user {
+      position: relative;
+      flex: 1;
+      text-align: right;
+      &-premium {
+        position: absolute;
+        right: -7px;
+        top: -4px;
+        width: 14px;
+        height: 14px;
+        border-radius: 15px;
+        border: solid 2px $color.white;
+        background-color: #FFC107;
+        .so-icon {
+          color: #FFF06C;
+        }
+      }
+    }
+  }
+}
+
+.greeting {
+  text-align: center;
+  font-size: 18px;
+  color: rgba($color.white,0.89);
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.chart-loader-container {
+  display: inline-block;
+  height: 135px;
+}
+
+.tasks-loader-container {
+  display: inline-block
+  height: 135px;
+  width: 100%;
+}
+
+.task-message-container {
+  margin-top: -40px;
+
+  .block--msg .block__content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

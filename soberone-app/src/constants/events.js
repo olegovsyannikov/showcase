@@ -1,0 +1,4 @@
+export const FIRE_EVENT = 'FIRE_EVENT'
+export const FIRE_EVENT_FAIL = 'FIRE_EVENT_FAIL'
+export const TRACK_REVENUE = 'TRACK_REVENUE'
+export const TRACK_REVENUE_FAIL = 'TRACK_REVENUE_FAIL'

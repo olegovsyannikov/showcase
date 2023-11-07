@@ -1,0 +1,24 @@
+{
+  "appId": "one.getsober.soberone",
+  "appName": "SoberOne",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "build",
+  "cordova": {},
+  "server": {
+    "cleartext": true,
+    "androidScheme": "https",
+    "hostname": "app.getsober.one"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 2000,
+      "backgroundColor": "#ffffffff",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER",
+      "showSpinner": false
+    }
+  }
+}

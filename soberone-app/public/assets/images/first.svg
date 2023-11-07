@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="66" viewBox="0 0 128 66">
+  <defs>
+    <path id="first-a" d="M8,10 L32,10 L32,14 L8,14 L8,10 Z M8,18 L32,18 L32,22 L8,22 L8,18 Z M8,26 L32,26 L32,30 L8,30 L8,26 Z M8,34 L32,34 L32,38 L8,38 L8,34 Z M8,42 L32,42 L32,46 L8,46 L8,42 Z"/>
+    <filter id="first-b" width="108.3%" height="105.6%" x="-4.2%" y="-2.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.031372549   0 0 0 0 0.031372549   0 0 0 0 0.2  0 0 0 0.04 0"/>
+    </filter>
+    <path id="first-c" d="M8,10 L32,10 L32,14 L8,14 L8,10 Z M8,18 L32,18 L32,22 L8,22 L8,18 Z M8,26 L32,26 L32,30 L8,30 L8,26 Z M8,34 L32,34 L32,38 L8,38 L8,34 Z M8,42 L32,42 L32,46 L8,46 L8,42 Z"/>
+    <filter id="first-d" width="108.3%" height="105.6%" x="-4.2%" y="-2.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.031372549   0 0 0 0 0.031372549   0 0 0 0 0.2  0 0 0 0.04 0"/>
+    </filter>
+    <rect id="first-e" width="20" height="2.5" x="5" y="22"/>
+    <filter id="first-f" width="130%" height="340%" x="-15%" y="-120%" filterUnits="objectBoundingBox">
+      <feOffset dy="-6" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.031372549   0 0 0 0 0.031372549   0 0 0 0 0.2  0 0 0 0.04 0"/>
+    </filter>
+    <rect id="first-g" width="20" height="2.5" x="5" y="27"/>
+    <filter id="first-h" width="130%" height="340%" x="-15%" y="-120%" filterUnits="objectBoundingBox">
+      <feOffset dy="-6" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.031372549   0 0 0 0 0.031372549   0 0 0 0 0.2  0 0 0 0.04 0"/>
+    </filter>
+    <rect id="first-i" width="20" height="2.5" x="5" y="32"/>
+    <filter id="first-j" width="130%" height="340%" x="-15%" y="-120%" filterUnits="objectBoundingBox">
+      <feOffset dy="-6" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.031372549   0 0 0 0 0.031372549   0 0 0 0 0.2  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -26)">
+    <rect width="128" height="128"/>
+    <g transform="translate(26 36)">
+      <rect width="40" height="56" fill="#448AFF" rx="2"/>
+      <use fill="#FFF" xlink:href="#first-a"/>
+      <use fill="#000" filter="url(#first-b)" xlink:href="#first-a"/>
+      <g transform="translate(40)">
+        <rect width="40" height="56" fill="#448AFF" rx="2"/>
+        <use fill="#FFF" xlink:href="#first-c"/>
+        <use fill="#000" filter="url(#first-d)" xlink:href="#first-c"/>
+      </g>
+    </g>
+    <g transform="translate(96 28)">
+      <rect width="30" height="40" fill="#FFF" stroke="#FFD200" stroke-width="4" rx="2"/>
+      <rect width="20" height="13" x="5" y="5" fill="#1CE8B5" opacity=".7"/>
+      <use fill="#FFF" xlink:href="#first-e"/>
+      <use fill="#080833" fill-opacity=".38" xlink:href="#first-e"/>
+      <use fill="#000" filter="url(#first-f)" xlink:href="#first-e"/>
+      <g>
+        <use fill="#FFF" xlink:href="#first-g"/>
+        <use fill="#080833" fill-opacity=".38" xlink:href="#first-g"/>
+        <use fill="#000" filter="url(#first-h)" xlink:href="#first-g"/>
+      </g>
+      <g>
+        <use fill="#FFF" xlink:href="#first-i"/>
+        <use fill="#080833" fill-opacity=".38" xlink:href="#first-i"/>
+        <use fill="#000" filter="url(#first-j)" xlink:href="#first-i"/>
+      </g>
+    </g>
+    <g transform="translate(0 54)">
+      <rect width="40" height="30" fill="#F36" rx="4"/>
+      <polygon fill="#FFF" fill-rule="nonzero" points="0 .175 0 17.675 13.75 8.925" transform="translate(15 6.25)"/>
+    </g>
+  </g>
+</svg>

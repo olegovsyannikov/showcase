@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "one.getsober.soberone",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 31,
+      "versionName": "2.4.1",
+      "outputFile": "app-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

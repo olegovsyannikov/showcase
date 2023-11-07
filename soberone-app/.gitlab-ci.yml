@@ -1,0 +1,10 @@
+stages:
+  - build-web
+  - build-gitlab
+  # - deploy
+
+include:
+  - local: '/.gitlab/web.gitlab-ci.yml'
+  - local: '/.gitlab/gitlab.gitlab-ci.yml'
+  # - local: '/.gitlab/docker.gitlab-ci.yml'
+  # - local: '/.gitlab/android.gitlab-ci.yml'

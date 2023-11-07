@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="40" viewBox="0 0 56 40">
+  <defs>
+    <rect id="success-a" width="56" height="40" x="4" y="12" rx="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-4 -12)">
+    <rect width="64" height="64"/>
+    <use fill="#448AFF" xlink:href="#success-a"/>
+    <rect width="54" height="38" x="5" y="13" stroke="#448AFF" stroke-width="2" rx="2"/>
+    <polyline stroke="#FFF" stroke-width="3" points="10 18 32 36 54 18"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "SoberOne",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

@@ -1,0 +1,102 @@
+.tpl_docker_deploy:
+  stage: deploy
+  image: alpine
+  rules:
+    - when: manual
+  before_script:
+    - which ssh-agent || apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $DEPLOY_HOST >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+.tpl_docker_build:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+
+build:docker:
+  extends: .tpl_docker_build
+  dependencies:
+    - build:web:prod
+    - build:web:stage
+  rules:
+    - if: $CI_COMMIT_TAG
+  variables:
+    GOOGLE_APPLICATION_CREDENTIALS: /secret.json
+    IMAGE_NAME: us-docker.pkg.dev/privilege-15570/sober/webapp
+  script:
+    - cat "$GCLOUD_ARTIFACTS_ACCOUNT" > /secret.json
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/Dockerfile
+      --destination="${IMAGE_NAME}:${CI_COMMIT_TAG}"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --build-arg BUILD_ENV=prod
+      --cache=true
+  tags:
+    - docker
+
+build:docker:dev:
+  extends: .tpl_docker_build
+  dependencies:
+    - build:web:dev
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/Dockerfile
+      --destination="$CI_REGISTRY_IMAGE:develop"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --build-arg BUILD_ENV=dev
+      --cache=true
+  tags:
+    - docker
+
+deploy:docker:gke:stage:
+  stage: deploy
+  image: alpine/helm:3.9.0
+  rules:
+    - if: $CI_COMMIT_TAG =~ /-rc\d+$/
+      when: manual
+  variables:
+    K8S_NAMESPACE: sober
+    WEBAPP_HOST: rc-webapp.sober.li
+    TLS_SECRET_NAME: rc-webapp-sober-li-cert
+  script:
+    - helm package --app-version=${CI_COMMIT_TAG} ./deploy
+    - >
+      helm upgrade -i --wait -n ${K8S_NAMESPACE} ${CI_PROJECT_NAME} ./webapp*.tgz
+      --set 'ingress.hosts[0].host=${WEBAPP_HOST}'
+      --set 'ingress.hosts[0].paths[0].pathType=Prefix'
+      --set 'ingress.hosts[0].paths[0].path=/'
+      --set 'ingress.tls[0].secretName=${TLS_SECRET_NAME}'
+      --set 'ingress.tls[0].hosts[0]=${WEBAPP_HOST}'
+  tags:
+    - docker
+    - k8s
+
+deploy:docker:dev:
+  extends: .tpl_docker_deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: manual
+  variables:
+    DEPLOY_HOST: app.sober.li
+    DEPLOY_USER: deploy
+  script:
+    - >
+      ssh $DEPLOY_USER@$DEPLOY_HOST -C "
+      docker service update --force --with-registry-auth --image $CI_REGISTRY_IMAGE:develop soberone_webapp
+      "

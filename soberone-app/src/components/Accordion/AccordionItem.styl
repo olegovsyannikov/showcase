@@ -1,0 +1,61 @@
+.accordion
+    &__item
+        position: relative;
+        min-height: 48px;
+        max-height: 48px;
+        box-sizing: border-box;
+        overflow: hidden;
+        &-header
+            position: relative;
+            padding: 12px 0px;
+            font-size: 18px;
+            font-weight: normal;
+            color: rgba($color.primary,0.89);
+            line-height: 24px;
+            display: block;
+            cursor: pointer;
+            &:before
+                position: absolute;
+                right: 0;
+                font-size: 24px;
+                content: "\F10A"
+                font-family: icons;
+                font-style: normal;
+                font-weight: normal;
+                vertical-align: top;
+        &-content
+            opacity: 0;
+            padding: 16px 0;
+            transition: opacity .35s ease-in
+        &--disabled
+            pointer-events: none;
+        &--active
+            max-height: 9999em !important;
+            transition: max-height .35s ease-in
+            overflow: inherit;
+        &--active &-content
+            opacity: 1;
+        &--active &-header
+            &:before
+                transform: rotate(180deg);
+
+    &__item + &__item
+        border-top: 1px solid #DFDFDF;
+
+    &--material 
+        box-shadow: inset 0px 1px 0px rgba(8, 8, 51, 0.08), inset 0px -1px 0px rgba(8, 8, 51, 0.08);
+    &--material &__item
+        &-header
+            padding: 12px 20px;
+            &:before
+                right: 20px;
+        &-content
+            padding: 16px 20px;
+            
+    &--answers &__item
+        &-header
+            padding: 12px 20px;
+            &:before
+                right: 20px;
+        &-content
+            padding: 16px 20px;

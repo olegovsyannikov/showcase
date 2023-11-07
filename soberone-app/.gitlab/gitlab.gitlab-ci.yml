@@ -1,0 +1,28 @@
+.tpl_gitlab_build:
+  stage: build-gitlab
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+
+build:gitlab:
+  extends: .tpl_gitlab_build
+  dependencies:
+    - build:web:prod
+    - build:web:stage
+  rules:
+    - if: $CI_COMMIT_TAG
+  variables:
+    IMAGE_NAME: registry.gitlab.com/privilege/webapp
+  script:
+    - >
+      /kaniko/executor
+      --context=${CI_PROJECT_DIR}
+      --dockerfile=${CI_PROJECT_DIR}/Dockerfile
+      --destination="${IMAGE_NAME}:${CI_COMMIT_TAG}"
+      --destination="${IMAGE_NAME}:latest"
+      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+      --build-arg VCS_REF=$CI_COMMIT_SHA
+      --build-arg BUILD_ENV=prod
+      --cache=true
+  tags:
+    - docker

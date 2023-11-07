@@ -1,0 +1,101 @@
+.menu
+    &--more
+        border-top: 1px solid $theme.bg;
+    &--more &__link
+        letter-spacing: normal;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: rgba($color.primary, 0.89);
+        outline: none;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box
+        transition: all 0.1s linear
+        letter-spacing: -0.31em;
+        &--disabled
+            opacity: 0.5
+        &-text,
+        &-description,
+        &-icon
+            display: inline-block;
+            letter-spacing: normal;
+            vertical-align: middle;
+            line-height: 24px;
+        &-text
+            font-size: 14px;
+            padding-left: 20px;
+        &-description
+            display: block;
+            padding-left: 45px;
+            font-size: 12px;
+            color: $theme.menu.description.color;
+        &-icon
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            color: rgba($color.primary, 0.54);
+            &[data-unread]
+                &:before
+                    content: attr(data-unread)
+                    position: absolute;
+                    top: -2px
+                    right: -7px
+                    width: 12px;
+                    height: 12px;
+                    line-height: 11px;
+                    font-size: 8px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    background: $theme.menu.unread;
+
+    &--footer
+        display: flex;
+        letter-spacing: -0.31em;
+    &--footer &__link
+        flex: 1
+        letter-spacing: normal;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: rgba($color.primary, 0.54);
+        outline: none;
+        padding: 8px 0;
+        transition: all 0.1s linear
+        &--disabled
+            opacity: 0.5
+        &-text
+            display: block
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+            margin-top: 4px;
+        &-icon
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            line-height: 24px;
+            &[data-unread]
+                &:before
+                    content: attr(data-unread)
+                    position: absolute;
+                    top: -2px
+                    right: -7px
+                    width: 12px;
+                    height: 12px;
+                    line-height: 11px;
+                    font-size: 8px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    background: $theme.menu.unread;
+
+        &--active
+            color: $theme.menu.active.color;
+    &--footer &__icon
+        display: inline-block;
+
+.so-icon--donate
+  color: #FF3366;

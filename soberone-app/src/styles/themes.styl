@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+$font = {}
+$font.main = "Open Sans", sans-serif
+
+// Colors
+
+$color = {
+  "primary": #000000,
+  "primaryLight": #555961,
+  "accent": #1B57E1,
+  "secondary": #22D68B,
+  "green": #00BFA5,
+  "blue": #448AFF,
+  "blueLight": #2FCBEB,
+  "red": #FF0000,
+  "redLight": #FF6047,
+  "dark": #080833,
+  "purple": #4527A0,
+  "black": rgba(#080808, 0.89),
+  "grey54": rgba(#080808, 0.54),
+  "grey38": rgba(#080808, 0.38),
+  "grey26": rgba(#080808, 0.26),
+  "grey12": rgba(#080808, 0.12),
+  "grey8": #EBEFF2,
+  "grey4": #F5F8FA,
+  "white": #FFFFFF,
+  "white70": rgba(#FFFFFF, 0.7),
+  "white54": rgba(#FFFFFF, 0.54),
+  "white18": rgba(#FFFFFF, 0.18),
+  "white12": rgba(#FFFFFF, 0.12),
+  "white06": rgba(#FFFFFF, 0.06),
+  "grey": #7A7D85,
+  "greyLight": #F7F8FA,
+}
+
+make-colors($color)
+  for $colorName, $value in $color
+    &--{$colorName}
+      color: $value;
+
+.color {
+  make-colors($color);
+}
+
+$color.status = {
+    "awful": #FF1744,
+    "disgusting": #F04826,
+    "bad": #F0A511,
+    "normal": #448AFF,
+    "pleased": #2FCBEB,
+    "chearful": #1BDEAD,
+    "excellent": #23D96F,
+}
+$themes = {
+  "light": {},
+}
+
+$themes.light = {
+  "bg": #ffffff,
+
+  "menu": {
+    "unread": $color.redLight,
+    "active": {
+      "color": $color.accent,
+    },
+    "description": {
+      "color": rgba($color.primary, 0.4),
+    },
+  },
+
+  "block": {
+    "grey": {
+      "bg": $color.greyLight,
+    }
+    "tasks": {
+      "finishedBg": $color.greyLight,
+    }
+  },
+
+  "header": {
+    "title": #000000,
+    "bg": {
+      "diary": $color.greyLight,
+      "profile": $color.greyLight,
+    }
+    "buttons": {
+      "active": $color.secondary,
+    }
+  },
+
+  "tabs": {
+    "default": {
+      "border": #E1E3E6,
+      "color": $color.primaryLight,
+    },
+    "active": {
+      "border": $color.accent,
+      "color": $color.primary,
+    }
+  },
+
+  "badges": {
+    "label": {
+      "bg": rgba($color.primary, 0.05),
+      "color": rgba($color.primary, 0.9),
+    }
+    "outline": {
+      "border": rgba($color.primary, 0.1)
+      "color": rgba($color.primary, 0.5),
+    }
+  }
+
+  "status": {
+    "item0": #FF1744,
+    "item1": #F04826,
+    "item2": #F0A511,
+    "item3": #448AFF,
+    "item4": #2FCBEB,
+    "item5": #1BDEAD,
+    "item6": #23D96F,
+  },
+
+  "form": {
+    "textField": {
+      "disabled": {
+        "color": rgba($color.primary, 0.6),
+      }
+    }
+  }
+
+  "buttons": {
+    "primary": {
+      "default": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "hover": {
+        "bg": rgba($color.accent, 0.9),
+      }
+      "active": {
+        "bg": rgba($color.accent, 0.8),
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.3),
+      }
+    }
+    "secondary": {
+      "default": {
+        "bg": transparent,
+        "color": $color.accent,
+      }
+      "hover": {
+        "bg": $color.greyLight,
+      }
+      "active": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.3),
+      }
+    }
+    "light": {
+      "default": {
+        "border": rgba($color.primary, 0.1),
+        "color": rgba($color.primary,0.4),
+      }
+      "hover": {
+        "bg": rgba($color.primary, 0.05),
+      }
+      "active": {
+        "bg": rgba($color.primary, 0.1),
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.2),
+      }
+    }
+    "ghost": {
+      "default": {
+        "bg": "none",
+        "color": #888888,
+      }
+      "hover": {
+        "bg": #eeeeee,
+        "color": $color.primary,
+      }
+      "active": {
+        "bg": rgba($color.primary, 0.07),
+        "color": $color.primary,
+      }
+      "disabled": {
+        "bg": "none",
+        "color": #dddddd,
+      }
+    }
+    "outline": {
+      "default": {
+        "border": $color.accent,
+        "color": $color.primary,
+      }
+      "hover": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "active": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.4),
+      }
+    }
+    "social": {
+      "default": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "hover": {
+        "bg": rgba($color.accent, 0.9),
+      }
+      "active": {
+        "bg": rgba($color.accent, 0.8),
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.4),
+      }
+    }
+    "select": {
+      "default": {
+        "bg": rgba($color.primary, 0.075),
+        "border": rgba($color.primary, 0),
+        "color": $color.primary,
+      }
+      "hover": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "active": {
+        "bg": $color.white,
+        "color": $color.primary,
+        "border": $color.accent,
+      }
+      "disabled": {
+        "bg": rgba($color.primary, 0.1),
+        "color": rgba($color.primary, 0.4),
+      }
+    }
+  },
+
+  "chart": {
+    "bg": $color.greyLight,
+    "title": $color.primaryLight,
+  }
+
+  "calendar": {
+    "day": $color.primaryLight,
+    "date": {
+      "border": rgba($color.accent, 0.12),
+      "color": $color.primary,
+    }
+    "today": {
+      "bg": $color.accent,
+      "color": $color.white,
+    }
+    "yes": {
+      "bg": rgba($color.redLight, 0.12),
+      "color": $color.redLight,
+    }
+    "no": {
+      "bg": rgba($color.green, 0.12),
+      "color": $color.green,
+    }
+  }
+
+  "progressbar": {
+    "meter": rgba($color.primary, 0.03),
+    "icon": $color.primary,
+    "value": $color.accent,
+    "stage": $color.accent,
+    "sobriety": $color.accent,
+    "textAccent": $color.primary,
+    "text": $color.primary,
+    "tip": rgba($color.primary, 0.4),
+    "border": rgba($color.white, 0.1),
+  }
+
+  "tracker": {
+    "dayBorder": rgba($color.primary, 0.1),
+  }
+
+  "slider": {
+    "bg": rgba($color.primary, 0.1),
+  }
+
+  "home": {
+    "goal": $color.primaryLight,
+    "week": $color.grey,
+  }
+
+  "task": {
+    "header": $color.primaryLight,
+    "title": $color.primary,
+    "intro": $color.greyLight,
+    "status": {
+      "new": {
+        "bg": $color.redLight,
+        "color": $color.white,
+      }
+      "inProgress": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+      "finished": {
+        "bg": $color.secondary,
+        "color": $color.white,
+      }
+    }
+    "response": {
+      "bg": $color.greyLight,
+    }
+    "myAnswers": {
+      "bg": $color.greyLight,
+    }
+    "otherAnswers": {
+      "bg": $color.greyLight,
+      "author": $color.primary,
+      "avatar": {
+        "bg": rgba($color.primary, 0.05),
+        "color": rgba($color.primary, 0.1),
+      }
+    }
+  }
+
+  "story": {
+    "bg": $color.primary,
+  }
+
+  "more": {
+    "profile": {
+      "bg": $color.greyLight,
+      "avatar": rgba($color.primary, 0.1),
+      "avatarBg": rgba($color.primary, 0.05),
+      "name": $color.primary,
+      "status": rgba($color.primary, 0.5),
+    }
+  }
+
+  "profile": {
+    "bg": $color.greyLight,
+    "info": rgba($color.primary, 0.5),
+  }
+
+  "test": {
+    "bg": $color.white,
+    "result": {
+      "bg": $color.greyLight,
+    }
+  }
+
+  "diary": {
+    "list": {
+      "date": rgba($color.primary, 0.5),
+    }
+  }
+
+  "cform": {
+    "robot": {
+      "bg": #F2F2F9,
+      "color": $color.primary,
+    }
+    "user": {
+      "bg": $color.accent,
+      "color": $color.white,
+    }
+    "quick": {
+      "border": $color.accent,
+      "color": $color.accent,
+      "hover": {
+        "bg": $color.accent,
+        "color": $color.white,
+      }
+    }
+    "input": {
+      "border": $color.accent,
+    }
+  }
+}
+
+$theme = $themes.light;

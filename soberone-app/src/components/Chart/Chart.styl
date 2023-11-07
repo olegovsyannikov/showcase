@@ -1,0 +1,308 @@
+.chart
+    position: relative;
+    letter-spacing: -0.31em;
+    white-space: nowrap;
+    text-align: right;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 20px;
+    height: 240px;
+
+    & ::-webkit-scrollbar
+      width: 3px;
+    & ::-webkit-scrollbar-thumb
+      background: #dddddd;
+
+    &__content
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        min-width: 100%;
+        padding: 0 16px;
+        text-align: center;
+        box-sizing: border-box;
+        &-grid
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 46px;
+            border-top: 1px solid rgba($color.primary, 0.06);
+            border-bottom: 1px solid rgba($color.primary, 0.18);
+            &:before,
+            &:after
+                position: absolute;
+                left: 0;
+                content: "";
+                height: 1px;
+                width: 100%;
+                background: rgba($color.primary, 0.06);
+            &:before
+                top: 25%;
+            &:after
+                top: 75%;
+        &-grid > span
+            position: absolute;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            background: rgba($color.primary, 0.06);
+
+
+    &__item
+        position: relative;
+        display: inline-block;
+        letter-spacing: normal;
+        width: 48px;
+        height: 100%;
+        box-sizing: border-box;
+        &-line
+            position: absolute;
+            left: 50%;
+            top: 1px;
+            bottom: 47px;
+            width: 1px;
+            background: rgba($color.primary, 0.18);
+        &--tracker-0 .chart__candle:before
+            content: "";
+            position: absolute;
+            left: -4px;
+            top: -18px;
+            font-size: 12px;
+        &--tracker-1 .chart__candle:before
+            content: "🍷";
+            position: absolute;
+            left: -3px;
+            top: -18px;
+            font-size: 12px;
+
+    &__candle
+        position: absolute;
+        display: block;
+        bottom: 38px;
+        left: 50%;
+        width: 20px;
+        margin-left: -10px
+        border-radius: 10px;
+        height: 28px;
+        z-index: 1;
+        &[data-size="0"]
+            background: $color.status.awful
+        &[data-size="1"]
+            background: $color.status.disgusting
+            height: 56px
+        &[data-size="2"]
+            background: $color.status.bad
+            height: 84px
+        &[data-size="3"]
+            background: $color.status.normal
+            height: 112px;
+        &[data-size="4"]
+            background: $color.status.pleased
+            height: 140px;
+        &[data-size="5"]
+            background: $color.status.chearful
+            height: 168px;
+        &[data-size="6"]
+            background: $color.status.excellent
+            height: 200px;
+        &--clickable
+            cursor: pointer
+    &__details
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 8px;
+        &-candle
+            height: 2px;
+            margin: 2px 0;
+            border-radius: 2px;
+            &[data-size="0"]
+                background: $color.status.awful
+                width: 2px;
+            &[data-size="1"]
+                background: $color.status.disgusting
+                width: 4px;
+            &[data-size="2"]
+                background: $color.status.bad
+                width: 6px;
+            &[data-size="3"]
+                background: $color.status.normal
+                width: 8px;
+            &[data-size="4"]
+                background: $color.status.pleased
+                width: 10px;
+            &[data-size="5"]
+                background: $color.status.chearful
+                width: 12px;
+            &[data-size="6"]
+                background: $color.status.excellent
+                width: 14px;
+    &__time
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-top: 6px;
+        width: 100%;
+        font-size: 12px;
+        min-height: 32px;
+        font-weight: normal;
+        color: rgba($color.primary, 0.44);
+        &--weekend
+            color: rgba($color.primary, 0.7)
+
+    &--sm
+        height: 135px
+
+    &--sm &__item
+        width: 23px;
+
+    &--sm &__content
+        padding: 0;
+        &-grid
+            border-top: 1px solid rgba($color.black, 0.06);
+            border-bottom: 1px solid rgba($color.black, 0.1);
+            bottom: 32px;
+            &:before
+            &:after
+                background-color: rgba($color.black, 0.06);
+        &-grid > span
+            background-color: rgba($color.black, 0.06);
+
+    &--sm &__candle
+        width: 12px;
+        bottom: 28px;
+        margin-left: -6px;
+        border-radius: 6px;
+        &[data-size="0"]
+            height: 18px
+        &[data-size="1"]
+            height: 28px
+        &[data-size="2"]
+            height: 42px
+        &[data-size="3"]
+            height: 56px;
+        &[data-size="4"]
+            height: 70px;
+        &[data-size="5"]
+            height: 84px;
+        &[data-size="6"]
+            height: 104px;
+    &--sm &__time
+        font-size: 10px
+        min-height: 22px
+        color: rgba($color.primary, 0.89);
+
+
+    &--xs
+        height: 245px;
+    &--xs &__item
+        width: 24px;
+    &--xs &__content
+        text-align: right;
+    &--xs &__candle
+        width: 8px;
+        bottom: 44px;
+        margin-left: -4px;
+        border-radius: 4px;
+        &[data-size="0"]
+            height: 28px;
+        &[data-size="1"]
+            height: 56px
+        &[data-size="2"]
+            height: 84px
+        &[data-size="3"]
+            height: 112px;
+        &[data-size="4"]
+            height: 140px;
+        &[data-size="5"]
+            height: 168px;
+        &[data-size="6"]
+            height: 196px;
+    &--xs &__details
+        margin: 0 6px;
+
+    &--pseudo
+        opacity: 0.1;
+    &--pseudo &__candle
+        background: $color.primary;
+    &--pseudo &__time
+        color: $color.primary;
+
+    &--sm&--pseudo &__candle
+        background: rgba($color.black, 0.5);
+    &--sm&--pseudo &__time
+        color: rgba($color.black);
+
+    // Home Small
+    &--home
+        height: 138px;
+    &--home &__item
+        width: 24px;
+        &-line
+            bottom: 39px;
+    &--home &__candle
+        width: 8px;
+        bottom: 35px;
+        margin-left: -4px;
+        border-radius: 4px;
+        &[data-size="0"]
+            height: 14px;
+        &[data-size="1"]
+            height: 28px
+        &[data-size="2"]
+            height: 42px
+        &[data-size="3"]
+            height: 58px;
+        &[data-size="4"]
+            height: 72px;
+        &[data-size="5"]
+            height: 86px;
+        &[data-size="6"]
+            height: 100px;
+    &--home &__time
+        min-height: 24px;
+
+    &--home &__content
+        padding-right: 20px;
+        &-grid
+            bottom: 38px;
+
+    &--test
+        height: 145px;
+        margin-top: 24px;
+
+    &--test &__content
+        padding: 0;
+        &-grid
+            bottom: 38px;
+    &--test &__time
+        min-height: 24px;
+    &--test &__candle
+        background: #448aff;
+        min-height: 24px;
+        bottom: 32px;
+        &:before
+            content: attr(data-size);
+            font-size: 12px;
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+    &--clickable
+        cursor: pointer;
+
+@media only screen and (max-width: 411px)
+
+    .chart
+        &--sm &__item
+            width: 14.28%;
+        &--sm &__candle
+            width: 8px;
+            margin-left: -4px;
+        &--sm &__time
+            font-size: 9px;
