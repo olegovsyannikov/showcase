@@ -71,12 +71,6 @@ Segments from a digital mental health application designed to provide support ac
 
 While these code snippets are provided for viewing purposes, feedback and discussions are welcome. Feel free to open an issue or submit a pull request if you have suggestions or questions regarding the code.
 
-## Connect
-
-Interested in collaborating or learning more about my work? Let's connect! 
-
-https://www.linkedin.com/in/oleg-ovsyannikov/
-
 ---
 
 Thank you for visiting my portfolio showcase. I am constantly updating and adding more code snippets, so stay tuned for more!
