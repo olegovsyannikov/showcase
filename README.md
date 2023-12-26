@@ -17,8 +17,11 @@ I've broke them down by three main categories:
 | Project | Description | Job Types | Tech Stack |
 | --- | --- | --- | --- |
 | [Admin SPA](admin-spa) | Admin dashboard designed to manage a cross-platform app. | Frontend | React.js, Redux, Next.js, GraphQL  |
+| [Directadvert](directadvert) | Landing for an international ad network. | Design, frontend, copywriting | React.js, Next.js, Javascript, REST API |
+| [Giraff Dashboard](giraff-dashboard) | Publishers dashboard for content recommendation. | Design, frontend, UX copy | React.js, Next.js, TypeScript, Tailwind CSS, REST API |
+| [Giraff Landing](giraff-landing) | Landing website for a SaaS for publishers. | Design, illustration, frontend | React.js, Next.js, TypeScript, REST API |
+| [Quiz App](quiz-app) | A fast and responsive quiz builder for marketing | Design, frontend | TypeScript, Next.js, NextUI |
 | [Sober One](soberone-app) | Mental health application for addicts. | Design, frontend, mobile | React.js, Redux, Ionic, Capacitor |
-| [Quiz App](quiz-app) | A fast and responsive quiz builder for marketing | Design, Frontend | TypeScript, Next.js, NextUI |
 
 ## Cross-platform and mobile low-code
 
