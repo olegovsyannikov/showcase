@@ -33,7 +33,7 @@ Code snippets from the backend application serving a cross-platform application.
 
 ### Getsober.one
 
-- [Previews & code](tree/main/getsober.one)
+- [Previews & code](getsober.one)
 
 #### Overview
 
