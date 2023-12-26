@@ -6,69 +6,14 @@ Welcome to my monorepo, a curated selection of code excerpts from various web de
 
 Each project or code snippet included in this monorepo is a testament to my experience in creating scalable, efficient, and robust web applications. Below you'll find a brief overview of each, along with the technologies utilized.
 
-| Link | Project Name | Description | Tech Stack |
+| Project | Description | Job Types | Tech Stack |
 | --- | --- | --- | --- |
-| [See the code](admin-spa) | Admin SPA | Code from an admin dashboard designed to manage a cross-platform backend system. | React.js, Redux, Next.js, GraphQL  |
-
-### Backend API
-
-Code snippets from the backend application serving a cross-platform application. It includes RESTful API design patterns and database schema examples.
-
-- [Code samples](api)
-
-#### Technologies
-
-- PHP: Backend scripting language.
-- MySQL: Database for storing application data.
-- Laravel: PHP framework for web artisans.
-
-### Sober One App
-
-Segments from a digital mental health application designed to provide support across multiple platforms.
-
-- [Design previews & code samples](soberone-app)
-
-#### Technologies
-
-- React.js: For building the interface.
-- Redux: For comprehensive state management.
-- Ionic Framework: For cross-platform app development.
-- Capacitor: For native runtime and web app services.
-
-### Getsober.one
-
-A landing page project showcasing corporate information about company and products.
-
-- [Design previews & code](getsober.one)
-
-#### Technologies
-
-- HTML: Structure of the web page.
-- CSS: Styling and layout.
-- JavaScript: Interactivity and dynamic content.
-
-### Quiz App
-
-A fast and responsive web application designed to create and distribute quizzes as a part of marketing campaigns.
-
-- [View code](quiz-app)
-
-#### Technologies
-
-- TypeScript: JavaScript with syntax for types.
-- Next.js: React framework for production.
-- NextUI: Modern UI library for React.
-
-### Scaleway
-
-This directory showcases the deployment process and management of both backend and frontend applications on a Kubernetes platform hosted by Scaleway.
-
-- [See configs and manifests](scaleway)
-
-#### Technologies
-
-- Gitlab: Source code management and CI/CD.
-- Helm: Kubernetes package manager for deploying applications.
+| [Admin SPA](admin-spa) | Admin dashboard designed to manage a cross-platform app. | Frontend | React.js, Redux, Next.js, GraphQL  |
+| [Backend API](api) | Backend application serving a cross-platform mobile app. | Backend | PHP, MySQL, Laravel |
+| [Sober One](soberone-app) | Mental health application for addicts. | Design, frontend, mobile | React.js, Redux, Ionic, Capacitor |
+| [Getsober.one](getsober.one) | A landing page project showcasing company and products. | Design, frontend | HTML, CSS, Javascript |
+| [Quiz App](quiz-app) | A fast and responsive quiz builder for marketing | Design, Frontend | TypeScript, Next.js, NextUI |
+| [Scaleway](scaleway) | Microservices application deployment on a Kubernetes cluster | CICD design and code | Gitlab, Helm, Kubernetes |
 
 ## Contribution
 
