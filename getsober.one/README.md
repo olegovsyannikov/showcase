@@ -2,6 +2,12 @@
 
 Landing website for my own startup Sober One — a mobile app for addicts helping them to overcome addiction online.
 
+## Jobs done
+
+- Design
+- Coding
+- Copywriting
+
 ## Tech Stack
 
 - HTML: Structure of the web page.
@@ -10,12 +16,12 @@ Landing website for my own startup Sober One — a mobile app for addicts helpin
 
 ## Home Page
 
-![Home Page](previews/soberone-home.png)
+<img src="previews/soberone-home.png" width="50%" alt="Home Page" />
 
 ## Company Page
 
-![Company Page](previews/soberone-company.png)
+<img src="previews/soberone-company.png" width="50%" alt="Company Page" />
 
 ## Product Page
 
-![Product Page](previews/soberone-product.png)
+<img src="previews/soberone-product.png" width="50%" alt="Product Page" />
