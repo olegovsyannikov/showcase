@@ -27,7 +27,7 @@ I've broke them down by three main categories:
 
 | Project | Description | Job Types | Tech Stack |
 | --- | --- | --- | --- |
-| [Pet Care App](pet-care) | A sophisticated mobile app for pet owners. | Design, frontend, backend | FlutterFlow, Flutter, Dart, Firebase |
+| [Pet Care App](petcare) | A sophisticated mobile app for pet owners. | Design, frontend, backend | FlutterFlow, Flutter, Dart, Firebase |
 | [Getsober.one](getsober.one) | A landing page project showcasing company and products. | Design, frontend | Webflow, HTML, CSS, Javascript |
 | [Sober Too](sobertoo) | New version of my mobile application for addicts. | Design, frontend, backend | FlutterFlow, Flutter, Dart, Firebase |
 
