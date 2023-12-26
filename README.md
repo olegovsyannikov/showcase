@@ -31,12 +31,37 @@ I broke them down by three main categories:
 | [Getsober.one](getsober.one) | A landing page project showcasing company and products. | Design, frontend | Webflow, HTML, CSS, Javascript |
 | [Sober Too](sobertoo) | New version of my mobile application for addicts. | Design, frontend, backend | FlutterFlow, Flutter, Dart, Firebase |
 
-## Backend and other stuff
+## Backend, full-stack and other stuff
 
 | Project | Description | Job Types | Tech Stack |
 | --- | --- | --- | --- |
 | [Backend API](api) | Backend application serving a cross-platform mobile app. | Backend | PHP, MySQL, Laravel |
 | [Scaleway](scaleway) | Microservices application deployment on a Kubernetes cluster | CICD design and code | Gitlab, Helm, Kubernetes |
+
+## Technology Stack
+
+My preferred technologies to work with include but not limited to:
+
+- Design: Figma
+- Frontend: React, NextJS, Bootstrap, TailwindCSS,  NextUI, Storybook
+- Backend: Node/Express, PHP, Firebase
+- Low-code: Webflow, FlutterFlow, Bubble
+- Database: PostgreSQL, MySQL, Firestore
+- DevOps: Git, Docker, Heroku, Kubernetes, Vercel
+- AI: OpenAI GPT, Claude, Langchain
+
+## My professional values
+
+- Self-organisation, healthy pedanticism and work transparency
+- Understand the client's business context and provide the best solution possible
+- Make fair commitments and follow them thoroughly
+
+## How I work
+
+- Discuss all essential project requirements with a client
+- I prepare detailed project description, plan, epics/tasks breakdown and budget estimation in a short time
+- Discuss and approve project plan
+- I work in weekly sprints with timely updates in task management software and git repo
 
 ## Contribution
 
