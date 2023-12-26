@@ -6,7 +6,7 @@ Welcome to my monorepo, a curated selection of code excerpts from various web de
 
 Each project or code snippet included in this monorepo is a testament to my experience in creating scalable, efficient, and robust web applications. Below you'll find a brief overview of each, along with the technologies utilized.
 
-I've broke them down by three main categories:
+I broke them down by three main categories:
 
 - Frontend development jobs
 - Cross-platform and mobile low-code
