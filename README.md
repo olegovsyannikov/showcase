@@ -9,9 +9,11 @@ Each project or code snippet included in this monorepo is a testament to my expe
 ### Admin SPA [(link)](tree/main/admin-spa)
 
 #### Overview
+
 This section contains code from an admin dashboard designed to manage a cross-platform backend system.
 
 #### Technologies
+
 - React.js: For building the user interface.
 - Redux: For state management across the application.
 - Next.js: For server-side rendering and static site generation.
@@ -20,19 +22,25 @@ This section contains code from an admin dashboard designed to manage a cross-pl
 ### API [(link)](tree/main/api)
 
 #### Overview
+
 Code snippets from the backend application serving a cross-platform application. It includes RESTful API design patterns and database schema examples.
 
 #### Technologies
+
 - PHP: Backend scripting language.
 - MySQL: Database for storing application data.
 - Laravel: PHP framework for web artisans.
 
-### Getsober.one [(link)](tree/main/getsober.one)
+### Getsober.one
+
+- [Previews & code](tree/main/getsober.one)
 
 #### Overview
+
 A landing page project showcasing corporate information about company and products.
 
 #### Technologies
+
 - HTML: Structure of the web page.
 - CSS: Styling and layout.
 - JavaScript: Interactivity and dynamic content.
@@ -40,9 +48,11 @@ A landing page project showcasing corporate information about company and produc
 ### Quiz App [(link)](tree/main/quiz-app)
 
 #### Overview
+
 A fast and responsive web application designed to create and distribute quizzes as a part of marketing campaigns.
 
 #### Technologies
+
 - TypeScript: JavaScript with syntax for types.
 - Next.js: React framework for production.
 - NextUI: Modern UI library for React.
@@ -50,18 +60,22 @@ A fast and responsive web application designed to create and distribute quizzes 
 ### Scaleway [(link)](tree/main/scaleway)
 
 #### Overview
+
 This directory showcases the deployment process and management of both backend and frontend applications on a Kubernetes platform hosted by Scaleway.
 
 #### Technologies
+
 - Gitlab: Source code management and CI/CD.
 - Helm: Kubernetes package manager for deploying applications.
 
 ### Sober One App [(link)](tree/main/soberone-app)
 
 #### Overview
+
 Segments from a digital mental health application designed to provide support across multiple platforms.
 
 #### Technologies
+
 - React.js: For building the interface.
 - Redux: For comprehensive state management.
 - Ionic Framework: For cross-platform app development.
