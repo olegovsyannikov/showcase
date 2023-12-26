@@ -6,20 +6,11 @@ Welcome to my monorepo, a curated selection of code excerpts from various web de
 
 Each project or code snippet included in this monorepo is a testament to my experience in creating scalable, efficient, and robust web applications. Below you'll find a brief overview of each, along with the technologies utilized.
 
-### Admin SPA
+| Link | Project Name | Description | Tech Stack |
+| --- | --- | --- | --- |
+| [See the code](admin-spa) | Admin SPA | Code from an admin dashboard designed to manage a cross-platform backend system. | React.js, Redux, Next.js, GraphQL  |
 
-This section contains code from an admin dashboard designed to manage a cross-platform backend system.
-
-- [See the code](admin-spa)
-
-#### Technologies
-
-- React.js: For building the user interface.
-- Redux: For state management across the application.
-- Next.js: For server-side rendering and static site generation.
-- GraphQL: For querying the backend API efficiently.
-
-### API
+### Backend API
 
 Code snippets from the backend application serving a cross-platform application. It includes RESTful API design patterns and database schema examples.
 
