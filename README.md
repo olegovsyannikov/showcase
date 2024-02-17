@@ -47,8 +47,15 @@ My preferred technologies to work with include but not limited to:
 - Backend: Node/Express, PHP, Firebase
 - Low-code: Webflow, FlutterFlow, Bubble
 - Database: PostgreSQL, MySQL, Firestore
-- DevOps: Git, Docker, Heroku, Kubernetes, Vercel
-- AI: OpenAI GPT, Claude, Langchain
+- DevOps: Git, Docker, Heroku, Kubernetes, AWS, Vercel
+- AI: Python, OpenAI, Mistral, Claude, Langchain, Haystack
+- Mobile: React Native, Flutter
+
+## My core advantage
+
+Thanks to my extensive management and startup experience, I have a deep understanding of any type and complexity of task, its business value, requirements and limitations. This allows me not only to develop good IT solutions, but also to create the best product for any given situation. Just tell me your problem and I will do the rest.
+
+See more at my [Upwork profile](https://www.upwork.com/freelancers/oovsyannikov).
 
 ## My professional values
 
